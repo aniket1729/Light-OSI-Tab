@@ -1,0 +1,13 @@
+#### ---- Setup commands ----
+
+
+#### ---- Run commands ----
+
+
+#### ---- Alias in ~/.bashrc ----
+tmuxnew A
+
+#### fl_activate # fl_deactivate
+#### fl_superlink # CLIENTS # fl_run
+#### CLIENT bash run_supernodes.sh
+#### fl_process # fl_client_stop # fl_kill
