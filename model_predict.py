@@ -11,7 +11,7 @@ from task import TabularNet
 # ⚙️ PREDICTION CONTROL PANEL
 # ==========================================
 MODEL_FILE_PATH = "./output/best_model.pth"
-TEST_DATA_PATH = "./data/global_test.pt"
+EVAL_FILE_PATH = "./data/global_test.pt"
 PLOT_FILE_PATH = "./output/fedavg_confusion_matrix.png"
 CLASS_NAMES = ["Low Yield (0)", "Med Yield (1)", "High Yield (2)"]
 NUM_DEBUG_SAMPLES = 10   # Number of individual tabular samples to inspect visually (Ground Truth Class v/s Predicted Class)
@@ -22,8 +22,8 @@ def run_prediction():
         print(f"❌ Error: Model weights not found at '{MODEL_FILE_PATH}'. Did you finish rounds?")
         return
 
-    if not os.path.exists(TEST_DATA_PATH):
-        print(f"❌ Error: Global test file not found at '{TEST_DATA_PATH}'. Run prepare_tabular_data.py first!")
+    if not os.path.exists(EVAL_FILE_PATH):
+        print(f"❌ Error: Global test file not found at '{EVAL_FILE_PATH}'. Run prepare_tabular_data.py first!")
         return
 
     print("==================================================")
@@ -37,7 +37,7 @@ def run_prediction():
     print("✅ Successfully loaded trained global model weights.")
 
     # 2. Load Unseen Global Test Data
-    test_data = torch.load(TEST_DATA_PATH, weights_only=True)
+    test_data = torch.load(EVAL_FILE_PATH, weights_only=True)
     X_test, y_test = test_data["x"].float(), test_data["y"].long()
     print(f"📦 Loaded {len(X_test)} unseen test samples.")
 
