@@ -12,9 +12,6 @@ publisher = "aniket"
 serverapp = "server_app:app"
 clientapp = "client_app:app"
 
-[tool.flwr.app.config]
-num-clients = 10
-
 [tool.flwr.federation]
 enabled = true
 number_of_nodes = 3  # This tells Flower to simulate 3 clients
@@ -25,4 +22,4 @@ partition-id = { enumeration = { size = 3 } }
 num-partitions = 3
 
 [tool.setuptools]
-py-modules = ["client_app", "server_app", "task", "prepare_tabular_data", "model_predict"]
+py-modules = ["client_app", "server_app", "task", "prepare_tabular_data", "model_predict", "config"]

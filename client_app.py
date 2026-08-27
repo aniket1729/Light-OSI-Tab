@@ -2,16 +2,16 @@ import os
 import time
 import torch
 from flwr.client import NumPyClient, ClientApp
-from task import TabularNet, load_data, CLIENT_RESOURCE_PROFILES, calculate_hardware_latency
+from task import TabularNet, load_data, CLIENT_RESOURCE_PROFILES, calculate_network_latency, debug_print
+from config import RESOURCE_MODE, DATA_DIR, CLIENT_FILE_PREFIX, NUM_CLASSES, META_FILE_PATH, ACTIVE_CONFIG
 
 # ==========================================
 # ⚙️ CLIENT CONTROL PANEL (HYPERPARAMETERS)
 # ==========================================
-DATA_DIR_PATH = "./data"
-DEFAULT_DATA_PATH = "./data/client_01.pt"
 LOCAL_EPOCHS = 10         # Number of passes over local data per round. 3 or 1 or 5
 LEARNING_RATE = 0.001     # 0.001 Adam Optimizer, 0.05 Step size for SGD
 # ==========================================
+
 
 class SimpleClient(NumPyClient):
     def __init__(self, trainloader, valloader, net, cid: int):
@@ -19,7 +19,10 @@ class SimpleClient(NumPyClient):
         self.valloader = valloader
         self.net = net
         self.cid = cid
-        self.profile = CLIENT_RESOURCE_PROFILES.get(cid, CLIENT_RESOURCE_PROFILES[0])
+        
+        #""" profile_id = 0 if RESOURCE_MODE == 0 else cid
+        profile_id = cid if RESOURCE_MODE else 0
+        self.profile = CLIENT_RESOURCE_PROFILES.get(profile_id, CLIENT_RESOURCE_PROFILES[0])
 
     def fit(self, parameters, config):
         start_time = time.time()
@@ -50,16 +53,25 @@ class SimpleClient(NumPyClient):
                 correct += (predicted == y_batch).sum().item()
             
             epoch_acc = correct / total
+
+            # Simulate System / Computation Delay per epoch
+            cpu_delay = self.profile["cpu_delay"]
+            time.sleep(cpu_delay)
+            debug_print(f"---- Simulated system delay: {cpu_delay:.3f} sec")
+
             print(f"Epoch {epoch+1}/{LOCAL_EPOCHS} - ===> LOCAL-TRAINING Accuracy: {epoch_acc:.4f}")
 
         print(f"   ∟ Client {self.cid+1} Local Epochs Completed. Last Epoch Acc: {epoch_acc:.4f}")
 
-        # 3. Simulate System & Network Latency Delay
-        param_bytes = sum(v.element_size() * v.nelement() for v in self.net.state_dict().values())
-        simulated_delay = calculate_hardware_latency(self.cid, payload_bytes=param_bytes)
-        time.sleep(simulated_delay) # Hold process to simulate physical delay
-        
+        # 3. Simulate Network Latency Delay
+        if RESOURCE_MODE:
+            param_bytes = sum(v.element_size() * v.nelement() for v in self.net.state_dict().values())    # calculate model size in bytes
+            simulated_delay = calculate_network_latency(self.cid, payload_bytes=param_bytes)    # (model_size × 2) / bandwidth
+            time.sleep(simulated_delay) # Hold process to simulate physical delay
+            debug_print(f"---- Simulated network delay: {simulated_delay:.3f} sec")
+
         total_wall_clock = (time.time() - start_time)
+        debug_print(f"---- total_wall_clock= {total_wall_clock}")
 
         # 4. Return updated weights, local dataset size and telemetry metrics back to server
         weights = [val.cpu().numpy() for val in self.net.state_dict().values()]
@@ -97,19 +109,28 @@ def client_fn(context):
 
     # 2. Format filename to match 'client_01.pt', 'client_02.pt', etc. (1-indexed filename)
     filename = f"client_{cid + 1:02d}.pt"
-    data_path = os.path.join(DATA_DIR_PATH, filename)
-    if not os.path.exists(DATA_DIR_PATH):
-        print(f"❌ Error: Data folder '{DATA_DIR_PATH}' or Data file '{data_path}' not exists. Please reverify prepare_tabular_data.py execution first.")
+    data_path = os.path.join(DATA_DIR, filename)
+    if not os.path.exists(data_path):
+        print(f"❌ Error: Data folder '{DATA_DIR}' or Data file '{data_path}' not exists. Please reverify prepare_tabular_data.py execution first.")
         return
     
+    dataset_name = ACTIVE_CONFIG["name"]
+    print(f"==== Starting ClientApp Dataset= '{dataset_name}' ====")
+
     # 3. Lookup profile to pass client-specific batch_size to Load Data
     # profile = CLIENT_RESOURCE_PROFILES[cid]
     profile = CLIENT_RESOURCE_PROFILES.get(cid, CLIENT_RESOURCE_PROFILES[0])
 
     # 4. Load dataset and initialize client
     trainloader, valloader = load_data(data_path, batch_size=profile["batch_size"])
-    
-    net = TabularNet()
+
+    # model initialization script
+    meta_info = torch.load(META_FILE_PATH)
+    NUM_FEATURES = meta_info["num_features"]  # e.g., dynamically resolved to 8, 12, or 15
+    debug_print(f"---- client: NUM_FEATURES= {NUM_FEATURES}, type = {type(NUM_FEATURES)}, NUM_CLASSES= {NUM_CLASSES}, type = {type(NUM_CLASSES)}\n")
+
+    #""" net = TabularNet()
+    net = TabularNet(NUM_FEATURES, NUM_CLASSES)
     return SimpleClient(trainloader, valloader, net, cid=cid).to_client()
 
 app = ClientApp(client_fn=client_fn)

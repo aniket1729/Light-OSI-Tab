@@ -6,16 +6,15 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 import seaborn as sns
 from task import TabularNet
+from config import CLASS_NAMES, DATA_DIR, EVAL_FILE, META_FILE_PATH, NUM_CLASSES, MODEL_FILE_PATH, PLOT_FILE_PATH, ACTIVE_CONFIG
+from collections import Counter
 
 # ==========================================
 # ⚙️ PREDICTION CONTROL PANEL
 # ==========================================
-MODEL_FILE_PATH = "./output/best_model.pth"
-EVAL_FILE_PATH = "./data/global_test.pt"
-PLOT_FILE_PATH = "./output/fedavg_confusion_matrix.png"
-CLASS_NAMES = ["Low Yield (0)", "Med Yield (1)", "High Yield (2)"]
 NUM_DEBUG_SAMPLES = 10   # Number of individual tabular samples to inspect visually (Ground Truth Class v/s Predicted Class)
 # ==========================================
+EVAL_FILE_PATH = os.path.join(DATA_DIR, EVAL_FILE)
 
 def run_prediction():
     if not os.path.exists(MODEL_FILE_PATH):
@@ -26,12 +25,17 @@ def run_prediction():
         print(f"❌ Error: Global test file not found at '{EVAL_FILE_PATH}'. Run prepare_tabular_data.py first!")
         return
 
+    dataset_name = ACTIVE_CONFIG["name"]
     print("==================================================")
-    print("🎯 STARTING GLOBAL MODEL EVALUATION (UNSEEN TEST SET)")
+    print(f"🎯 STARTING GLOBAL MODEL EVALUATION (UNSEEN TEST SET) Dataset= '{dataset_name}'.")
     print("==================================================")
 
     # 1. Load Trained TabularNet Model
-    net = TabularNet()
+    # model initialization script
+    meta_info = torch.load(META_FILE_PATH)
+    num_features = meta_info["num_features"]  # e.g., dynamically resolved to 8, 12, or 15
+
+    net = TabularNet(num_features, NUM_CLASSES)
     net.load_state_dict(torch.load(MODEL_FILE_PATH, weights_only=True))
     net.eval()
     print("✅ Successfully loaded trained global model weights.")
@@ -54,9 +58,9 @@ def run_prediction():
     acc = accuracy_score(y_true, y_pred)
     print(f"\n🌐 GLOBAL UNSEEN TEST ACCURACY: {acc * 100:.2f}%\n")
 
-    # ==========================================
+    # ==============================================
     # 🔍 TABULAR SAMPLE PREDICTION VISUAL INSPECTION
-    # ==========================================
+    # ==============================================
     print(f"--- 🔍 Visual Inspection of {NUM_DEBUG_SAMPLES} Random Test Samples ---")
     
     # Pick N random indices from test set
@@ -81,6 +85,22 @@ def run_prediction():
     debug_df = pd.DataFrame(sample_records)
     print(debug_df.to_string(index=False))
     print("-" * 65 + "\n")
+
+    # prediction distribution
+    print("True class distribution     :", np.bincount(y_true))
+    print("Predicted class distribution:", np.bincount(y_pred))
+    # inspect the confusion matrix
+    print("Confusion matrix:\n", confusion_matrix(y_true, y_pred))
+    #
+    print("True labels     :", Counter(y_true))
+    print("Predicted labels:", Counter(y_pred))
+    #
+    #print("GLOBAL:", np.bincount(y))
+    #print("GLOBAL TEST:", np.bincount(y[global_test_idx]))
+    #
+    #counts = [np.sum(client_y == c) for c in range(NUM_CLASSES)]
+    #print(f"Client {i+1}: {counts}")
+
 
     # 5. Print Detailed Classification Report for Paper
     print("--- Detailed Classification Report ---")
