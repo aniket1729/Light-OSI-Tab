@@ -1,0 +1,49 @@
+============================================================
+[20:53:35] 📌 Main Config SERVER
+------------------------------------------------------------
+  ∟ Resource Constraint : Yes
+  ∟ Method              : FedAvg 1 Round [Baseline]
+  ∟ Dataset             : AgriYield
+============================================================
+
+INFO :      Starting Flower ServerApp, config: num_rounds=1, no round_timeout
+INFO :
+INFO :      [INIT]
+INFO :      Using initial global parameters provided by strategy
+INFO :      Starting evaluation of initial global parameters
+INFO :      Evaluation returned no results (`None`)
+INFO :
+INFO :      [ROUND 1]
+INFO :      configure_fit: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_fit: received 10 results and 0 failures
+
+============================================================
+[20:57:18] 🚀 SERVER AGGREGATION & GLOBAL MODEL EVALUATION
+============================================================
+WARNING :   No fit_metrics_aggregation_fn provided
+[20:57:18] 📝 Saved final global aggregated model to ./output/best_model.pth
+
+============================================================
+📊 FINAL EXPERIMENTAL SUMMARY
+------------------------------------------------------------
+  ∟ Resource Constraint   : Yes
+  ∟ Method Name           : FedAvg 1 Round [Baseline]
+  ∟ Dataset Name          : AgriYield
+  ∟ Communication Rounds  : 1
+  ∟ Client Count          : 10
+  ∟ Upstream Payload      : 0.47 MB
+  ∟ Est. Total Bandwidth  : 0.95 MB
+  ∟ Total Training Time   : 3.71 mins
+  ∟ Global Test Accuracy  : 67.33%
+  ∟ Macro F1-Score        : 0.6615
+============================================================
+
+INFO :      configure_evaluate: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_evaluate: received 10 results and 0 failures
+WARNING :   No evaluate_metrics_aggregation_fn provided
+INFO :
+INFO :      [SUMMARY]
+INFO :      Run finished 1 round(s) in 230.20s
+INFO :          History (loss, distributed):
+INFO :                  round 1: 0.0
+INFO :

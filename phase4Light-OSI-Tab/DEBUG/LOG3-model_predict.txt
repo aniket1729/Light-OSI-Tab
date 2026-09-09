@@ -1,7 +1,7 @@
 (fl_env) aniket@headnode:~/ani_work/fl_deployment$ python model_predict.py
 
 ============================================================
-[13:24:51] 📌 Main Config
+[13:24:51] 📌 Main Config PREDICT/INFERENCE
 ------------------------------------------------------------
   ∟ Resource Constraint : Yes
   ∟ Method              : Light-OSI-Tab [Proposed]

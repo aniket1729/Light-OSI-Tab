@@ -1,0 +1,52 @@
+(fl_env) aniket@headnode:~/ani_work/fl_deployment$ tail -f logs/client_08.log
+INFO :      Starting Flower SuperNode
+WARNING :   Option `--insecure` was set. Starting insecure HTTP channel to 127.0.0.1:9092.
+INFO :      Flower Deployment Runtime: Starting ClientAppIo API on 127.0.0.1:9102
+INFO :      SuperNode ID: 13002072392412254361
+INFO :      Starting Flower SuperExec
+
+
+INFO :
+INFO :      [RUN 15128723027045596532, ROUND 1]
+INFO :      Receiving: train message (ID: b196616dcbce23ba6f9bc124e4dea38dff589bdccc3c51b0dc2312b9c2a59031)
+INFO :      Received successfully
+INFO :      Start `flwr-clientapp` process
+INFO :
+INFO :
+INFO :      [RUN 15128723027045596532, ROUND 1]
+INFO :      Sending: train message (ID: 6446edf678d974de3c6290bebf4714ccba704f5635bedf3e0e4634ce25192e84)
+INFO :      Sent successfully
+
+============================================================
+[20:53:39] 📌 Main Config CLIENT 08
+------------------------------------------------------------
+  ∟ Resource Constraint : Yes
+  ∟ Method              : FedAvg 1 Round [Baseline]
+  ∟ Dataset             : AgriYield
+  ∟ Client Profile      : Constrained Edge
+============================================================
+
+[20:53:39] 📌 Client 08 local class presence: [0, 1, 2]
+[20:53:39] ⚡ Client 08: Training local TabularNet for 100 epochs...
+[20:55:13] ✅ Client 08: Training completed in 93.86s (1.56m).
+INFO :
+INFO :      [RUN 15128723027045596532, ROUND 1]
+INFO :      Receiving: evaluate message (ID: 562519106f5a922b2bbcaa1edb0853c70301c448e41f07cee30d0ceb1491c96c)
+INFO :      Received successfully
+INFO :      Start `flwr-clientapp` process
+INFO :
+INFO :
+INFO :      [RUN 15128723027045596532, ROUND 1]
+INFO :      Sending: evaluate message (ID: a38f84942ca118cd4130b12eba69949995f7e43e2b514518326059a5e53bcc48)
+INFO :      Sent successfully
+
+============================================================
+[20:57:22] 📌 Main Config CLIENT 08
+------------------------------------------------------------
+  ∟ Resource Constraint : Yes
+  ∟ Method              : FedAvg 1 Round [Baseline]
+  ∟ Dataset             : AgriYield
+  ∟ Client Profile      : Constrained Edge
+============================================================
+
+[20:57:22] 📌 Client 08 local class presence: [0, 1, 2]
