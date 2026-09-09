@@ -1,0 +1,38 @@
+(fl_env) aniket@headnode:~/ani_work/fl_deployment$ python model_predict.py
+==================================================
+🎯 STARTING GLOBAL MODEL EVALUATION (UNSEEN TEST SET)
+==================================================
+✅ Successfully loaded trained global model weights.
+📦 Loaded 750 unseen test samples.
+
+🌐 GLOBAL UNSEEN TEST ACCURACY: 96.13%
+
+--- 🔍 Visual Inspection of 10 Random Test Samples ---
+Sample ID     True Label Predicted Label Confidence  Status
+ Row #736  Med Yield (1)   Med Yield (1)     100.0% ✅ MATCH
+ Row #452  Med Yield (1)   Med Yield (1)     100.0% ✅ MATCH
+ Row #460  Med Yield (1)   Med Yield (1)     100.0% ✅ MATCH
+ Row #737 High Yield (2)  High Yield (2)      62.4% ✅ MATCH
+ Row #744  Low Yield (0)   Low Yield (0)      98.3% ✅ MATCH
+ Row #004  Med Yield (1)   Med Yield (1)      95.3% ✅ MATCH
+ Row #033  Low Yield (0)   Low Yield (0)      76.1% ✅ MATCH
+ Row #007  Low Yield (0)   Low Yield (0)      95.5% ✅ MATCH
+ Row #142  Low Yield (0)   Low Yield (0)      97.0% ✅ MATCH
+ Row #163  Med Yield (1)   Med Yield (1)     100.0% ✅ MATCH
+-----------------------------------------------------------------
+
+--- Detailed Classification Report ---
+                precision    recall  f1-score   support
+
+ Low Yield (0)     0.9194    0.9729    0.9454       258
+ Med Yield (1)     0.9878    0.9798    0.9837       247
+High Yield (2)     0.9828    0.9306    0.9560       245
+
+      accuracy                         0.9613       750
+     macro avg     0.9633    0.9611    0.9617       750
+  weighted avg     0.9626    0.9613    0.9615       750
+
+📊 Confusion Matrix saved to './output/fedavg_confusion_matrix.png'.
+
+
+📊 Inference complete. Check the pop-up window for results.

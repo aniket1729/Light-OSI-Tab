@@ -1,0 +1,63 @@
+(fl_env) aniket@headnode:~/ani_work/fl_deployment$ python model_predict.py
+
+============================================================
+[13:24:51] 📌 Main Config
+------------------------------------------------------------
+  ∟ Resource Constraint : Yes
+  ∟ Method              : Light-OSI-Tab [Proposed]
+  ∟ Dataset             : AgriYield
+============================================================
+
+==================================================
+🎯 STARTING GLOBAL MODEL EVALUATION (UNSEEN TEST SET)
+==================================================
+✅ Successfully loaded trained global model weights.
+📦 Loaded 750 unseen test samples.
+🌐 GLOBAL UNSEEN TEST ACCURACY (Scikit-Learn) : 81.20%
+🌐 GLOBAL UNSEEN TEST ACCURACY (PyTorch Loop)  : 81.20%
+============================================================
+✅ VERIFIED: Both methods match perfectly!
+
+--- 📊 Class-Wise Accuracy (Custom Iterative Tracking) ---
+  ∟ Low Yield (0)   (Class 0): 90.48% (228/252)
+  ∟ Med Yield (1)   (Class 1): 83.67% (210/251)
+  ∟ High Yield (2)  (Class 2): 69.23% (171/247)
+-----------------------------------------------------------------
+
+--- 🔍 Visual Inspection of 10 Random Test Samples ---
+Sample ID     True Label Predicted Label Confidence     Status
+ Row #607 High Yield (2)  High Yield (2)      98.7%    ✅ MATCH
+ Row #254 High Yield (2)  High Yield (2)      93.8%    ✅ MATCH
+ Row #706 High Yield (2)   Low Yield (0)      78.8% ❌ MISMATCH
+ Row #511 High Yield (2)   Low Yield (0)      55.2% ❌ MISMATCH
+ Row #102  Med Yield (1)   Med Yield (1)      96.6%    ✅ MATCH
+ Row #428  Med Yield (1)   Med Yield (1)      88.5%    ✅ MATCH
+ Row #195  Med Yield (1)   Med Yield (1)      98.1%    ✅ MATCH
+ Row #532 High Yield (2)   Low Yield (0)      78.4% ❌ MISMATCH
+ Row #450  Low Yield (0)   Low Yield (0)      59.7%    ✅ MATCH
+ Row #265  Med Yield (1)   Low Yield (0)      59.7% ❌ MISMATCH
+-----------------------------------------------------------------
+
+True class distribution     : [252 251 247]
+Predicted class distribution: [306 258 186]
+Confusion matrix:
+ [[228  20   4]
+ [ 30 210  11]
+ [ 48  28 171]]
+True labels     : Counter({np.int64(0): 252, np.int64(1): 251, np.int64(2): 247})
+Predicted labels: Counter({np.int64(0): 306, np.int64(1): 258, np.int64(2): 186})
+
+--- Detailed Classification Report ---
+                precision    recall  f1-score   support
+
+ Low Yield (0)     0.7451    0.9048    0.8172       252
+ Med Yield (1)     0.8140    0.8367    0.8251       251
+High Yield (2)     0.9194    0.6923    0.7898       247
+
+      accuracy                         0.8120       750
+     macro avg     0.8261    0.8112    0.8107       750
+  weighted avg     0.8255    0.8120    0.8109       750
+
+📊 Confusion Matrix saved to './output/fedavg_confusion_matrix.png'.
+📊 Inference complete. Check the pop-up window for results.
+(fl_env) aniket@headnode:~/ani_work/fl_deployment$

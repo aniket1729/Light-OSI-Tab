@@ -1,0 +1,67 @@
+INFO :      App dependencies installed successfully via uv sync.
+
+============================================================
+[11:52:40] 📌 Main Config SERVER
+------------------------------------------------------------
+  ∟ Resource Constraint : Yes
+  ∟ Method              : Light-OSI-Tab [Proposed]
+  ∟ Dataset             : AgriYield
+============================================================
+
+INFO :      Starting Flower ServerApp, config: num_rounds=1, no round_timeout
+INFO :
+INFO :      [INIT]
+INFO :      Using initial global parameters provided by strategy
+INFO :      Starting evaluation of initial global parameters
+INFO :      Evaluation returned no results (`None`)
+INFO :
+INFO :      [ROUND 1]
+INFO :      configure_fit: strategy sampled 10 clients (out of 10)
+
+INFO :      aggregate_fit: received 10 results and 0 failures
+
+============================================================
+🚀STABILIZED DATA-FREE RECONSTRUCTION
+============================================================
+[12:30:45] ⚡ Server Computation Device: cpu
+[12:30:45] 📥 Received 10 client results and 0 failures.
+[12:30:45] ⚡ Generating class-balanced synthetic dataset...
+[12:30:51] ✅ Reconstructed 29996 samples in 5.94s.
+
+[12:30:51] 🎓 Training TabularNet (20 Epochs)...
+
+[12:31:01] 🎓 Training TabularNet (20 Epochs, Batch Size: 256)...
+   ∟ Epoch [01/20] - Loss: 0.6250 - Epoch Time: 24.09s - Elapsed: 24.1s
+   ∟ Epoch [02/20] - Loss: 0.3445 - Epoch Time: 20.36s - Elapsed: 44.4s
+   ∟ Epoch [03/20] - Loss: 0.2946 - Epoch Time: 12.25s - Elapsed: 56.7s
+   ∟ Epoch [04/20] - Loss: 0.2727 - Epoch Time: 11.51s - Elapsed: 68.2s
+   ∟ Epoch [05/20] - Loss: 0.2616 - Epoch Time: 12.43s - Elapsed: 80.6s
+   ∟ Epoch [06/20] - Loss: 0.2499 - Epoch Time: 8.71s - Elapsed: 89.4s
+   ∟ Epoch [07/20] - Loss: 0.2407 - Epoch Time: 0.67s - Elapsed: 90.0s
+   ∟ Epoch [08/20] - Loss: 0.2345 - Epoch Time: 0.86s - Elapsed: 90.9s
+   ∟ Epoch [09/20] - Loss: 0.2292 - Epoch Time: 1.24s - Elapsed: 92.1s
+   ∟ Epoch [10/20] - Loss: 0.2253 - Epoch Time: 0.52s - Elapsed: 92.6s
+   ∟ Epoch [11/20] - Loss: 0.2202 - Epoch Time: 1.46s - Elapsed: 94.1s
+   ∟ Epoch [12/20] - Loss: 0.2195 - Epoch Time: 0.51s - Elapsed: 94.6s
+   ∟ Epoch [13/20] - Loss: 0.2157 - Epoch Time: 2.31s - Elapsed: 96.9s
+   ∟ Epoch [14/20] - Loss: 0.2143 - Epoch Time: 0.61s - Elapsed: 97.5s
+   ∟ Epoch [15/20] - Loss: 0.2130 - Epoch Time: 0.38s - Elapsed: 97.9s
+   ∟ Epoch [16/20] - Loss: 0.2118 - Epoch Time: 0.54s - Elapsed: 98.5s
+   ∟ Epoch [17/20] - Loss: 0.2111 - Epoch Time: 0.61s - Elapsed: 99.1s
+   ∟ Epoch [18/20] - Loss: 0.2107 - Epoch Time: 1.35s - Elapsed: 100.4s
+   ∟ Epoch [19/20] - Loss: 0.2098 - Epoch Time: 0.44s - Elapsed: 100.9s
+   ∟ Epoch [20/20] - Loss: 0.2105 - Epoch Time: 0.35s - Elapsed: 101.2s
+[12:32:42] ✅ Classifier training finished in 111.17s.
+[12:32:42] 📝 Final Global Model saved to ./output/best_model.pth
+
+INFO :      configure_evaluate: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_evaluate: received 10 results and 0 failures
+WARNING :   No evaluate_metrics_aggregation_fn provided
+INFO :
+INFO :      [SUMMARY]
+INFO :      Run finished 1 round(s) in 2408.00s
+INFO :          History (loss, distributed):
+INFO :                  round 1: 0.0
+INFO :
+INFO :
+(fl_env) aniket@headnode:~/ani_work/fl_deployment$

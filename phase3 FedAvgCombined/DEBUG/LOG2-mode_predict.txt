@@ -1,0 +1,283 @@
+(fl_env) aniket@headnode:~/ani_work/fl_deployment$ python model_predict.py
+
+==================================================
+🎯 STARTING GLOBAL MODEL EVALUATION (UNSEEN TEST SET) Dataset= 'AgriYield'.
+==================================================
+✅ Successfully loaded trained global model weights.
+📦 Loaded 750 unseen test samples.
+
+🌐 GLOBAL UNSEEN TEST ACCURACY: 92.40%
+
+--- 🔍 Visual Inspection of 10 Random Test Samples ---
+Sample ID     True Label Predicted Label Confidence  Status
+ Row #539  Med Yield (1)   Med Yield (1)     100.0% ✅ MATCH
+ Row #705 High Yield (2)  High Yield (2)      90.9% ✅ MATCH
+ Row #732  Low Yield (0)   Low Yield (0)     100.0% ✅ MATCH
+ Row #265  Med Yield (1)   Med Yield (1)      95.6% ✅ MATCH
+ Row #315 High Yield (2)  High Yield (2)      75.0% ✅ MATCH
+ Row #300  Low Yield (0)   Low Yield (0)     100.0% ✅ MATCH
+ Row #687 High Yield (2)  High Yield (2)      92.9% ✅ MATCH
+ Row #289  Low Yield (0)   Low Yield (0)      99.7% ✅ MATCH
+ Row #419  Med Yield (1)   Med Yield (1)      91.0% ✅ MATCH
+ Row #602  Low Yield (0)   Low Yield (0)      99.8% ✅ MATCH
+-----------------------------------------------------------------
+
+True class distribution     : [252 251 247]
+Predicted class distribution: [289 256 205]
+Confusion matrix:
+ [[248   3   1]
+ [  4 244   3]
+ [ 37   9 201]]
+True labels     : Counter({np.int64(0): 252, np.int64(1): 251, np.int64(2): 247})
+Predicted labels: Counter({np.int64(0): 289, np.int64(1): 256, np.int64(2): 205})
+--- Detailed Classification Report ---
+                precision    recall  f1-score   support
+
+ Low Yield (0)     0.8581    0.9841    0.9168       252
+ Med Yield (1)     0.9531    0.9721    0.9625       251
+High Yield (2)     0.9805    0.8138    0.8894       247
+
+      accuracy                         0.9240       750
+     macro avg     0.9306    0.9233    0.9229       750
+  weighted avg     0.9302    0.9240    0.9231       750
+
+📊 Confusion Matrix saved to './output/fedavg_confusion_matrix.png'.
+
+
+
+
+==================================================
+🎯 STARTING GLOBAL MODEL EVALUATION (UNSEEN TEST SET) Dataset= 'AgriYield'.
+==================================================
+✅ Successfully loaded trained global model weights.
+📦 Loaded 750 unseen test samples.
+
+🌐 GLOBAL UNSEEN TEST ACCURACY: 92.93%
+
+--- 🔍 Visual Inspection of 10 Random Test Samples ---
+Sample ID     True Label Predicted Label Confidence     Status
+ Row #330  Med Yield (1)   Med Yield (1)      98.6%    ✅ MATCH
+ Row #691  Low Yield (0)   Low Yield (0)      99.9%    ✅ MATCH
+ Row #564  Low Yield (0)   Low Yield (0)      99.9%    ✅ MATCH
+ Row #745  Low Yield (0)   Low Yield (0)     100.0%    ✅ MATCH
+ Row #303 High Yield (2)  High Yield (2)      46.4%    ✅ MATCH
+ Row #677 High Yield (2)  High Yield (2)      99.6%    ✅ MATCH
+ Row #244 High Yield (2)   Low Yield (0)      71.2% ❌ MISMATCH
+ Row #141  Med Yield (1)   Med Yield (1)      97.2%    ✅ MATCH
+ Row #273  Med Yield (1)   Med Yield (1)      94.8%    ✅ MATCH
+ Row #083 High Yield (2)  High Yield (2)      52.0%    ✅ MATCH
+-----------------------------------------------------------------
+
+True class distribution     : [252 251 247]
+Predicted class distribution: [282 259 209]
+Confusion matrix:
+ [[248   0   4]
+ [  3 246   2]
+ [ 31  13 203]]
+True labels     : Counter({np.int64(0): 252, np.int64(1): 251, np.int64(2): 247})
+Predicted labels: Counter({np.int64(0): 282, np.int64(1): 259, np.int64(2): 209})
+--- Detailed Classification Report ---
+                precision    recall  f1-score   support
+
+ Low Yield (0)     0.8794    0.9841    0.9288       252
+ Med Yield (1)     0.9498    0.9801    0.9647       251
+High Yield (2)     0.9713    0.8219    0.8904       247
+
+      accuracy                         0.9293       750
+     macro avg     0.9335    0.9287    0.9280       750
+  weighted avg     0.9332    0.9293    0.9282       750
+
+
+
+
+(fl_env) aniket@headnode:~/ani_work/fl_deployment$ python model_predict.py
+==================================================
+🎯 STARTING GLOBAL MODEL EVALUATION (UNSEEN TEST SET) Dataset= 'TrafficVol'.
+==================================================
+✅ Successfully loaded trained global model weights.
+📦 Loaded 7230 unseen test samples.
+
+🌐 GLOBAL UNSEEN TEST ACCURACY: 84.88%
+
+--- 🔍 Visual Inspection of 10 Random Test Samples ---
+Sample ID       True Label  Predicted Label Confidence     Status
+ Row #906  Low Traffic (0)  Low Traffic (0)      99.2%    ✅ MATCH
+Row #5385 High Traffic (2)  Med Traffic (1)      76.2% ❌ MISMATCH
+Row #1125  Med Traffic (1)  Med Traffic (1)      97.2%    ✅ MATCH
+Row #5623  Low Traffic (0)  Low Traffic (0)     100.0%    ✅ MATCH
+Row #1156  Med Traffic (1)  Med Traffic (1)      99.9%    ✅ MATCH
+Row #2396  Low Traffic (0)  Low Traffic (0)     100.0%    ✅ MATCH
+Row #3173 High Traffic (2) High Traffic (2)      75.8%    ✅ MATCH
+Row #6960  Med Traffic (1)  Med Traffic (1)      98.4%    ✅ MATCH
+Row #6487 High Traffic (2) High Traffic (2)      76.9%    ✅ MATCH
+Row #5233 High Traffic (2) High Traffic (2)      87.4%    ✅ MATCH
+-----------------------------------------------------------------
+
+True class distribution     : [2425 2420 2385]
+Predicted class distribution: [2686 2350 2194]
+Confusion matrix:
+ [[2329   75   21]
+ [ 341 1857  222]
+ [  16  418 1951]]
+True labels     : Counter({np.int64(0): 2425, np.int64(1): 2420, np.int64(2): 2385})
+Predicted labels: Counter({np.int64(0): 2686, np.int64(1): 2350, np.int64(2): 2194})
+--- Detailed Classification Report ---
+                  precision    recall  f1-score   support
+
+ Low Traffic (0)     0.8671    0.9604    0.9114      2425
+ Med Traffic (1)     0.7902    0.7674    0.7786      2420
+High Traffic (2)     0.8892    0.8180    0.8522      2385
+
+        accuracy                         0.8488      7230
+       macro avg     0.8488    0.8486    0.8474      7230
+    weighted avg     0.8487    0.8488    0.8474      7230
+
+📊 Confusion Matrix saved to './output/fedavg_confusion_matrix.png'.
+📊 Inference complete. Check the pop-up window for results.
+(fl_env) aniket@headnode:~/ani_work/fl_deployment$
+
+
+
+(fl_env) aniket@headnode:~/ani_work/fl_deployment$ python model_predict.py
+==================================================
+🎯 STARTING GLOBAL MODEL EVALUATION (UNSEEN TEST SET) Dataset= 'TrafficVol'.
+==================================================
+✅ Successfully loaded trained global model weights.
+📦 Loaded 7230 unseen test samples.
+
+🌐 GLOBAL UNSEEN TEST ACCURACY: 82.35%
+
+--- 🔍 Visual Inspection of 10 Random Test Samples ---
+Sample ID       True Label  Predicted Label Confidence     Status
+Row #5593  Med Traffic (1)  Med Traffic (1)      77.5%    ✅ MATCH
+Row #3586  Med Traffic (1)  Med Traffic (1)      81.1%    ✅ MATCH
+ Row #458  Low Traffic (0)  Low Traffic (0)      94.7%    ✅ MATCH
+Row #4562 High Traffic (2) High Traffic (2)      62.7%    ✅ MATCH
+Row #1209 High Traffic (2) High Traffic (2)      81.7%    ✅ MATCH
+Row #4975  Med Traffic (1)  Med Traffic (1)      93.8%    ✅ MATCH
+Row #3984  Low Traffic (0)  Low Traffic (0)     100.0%    ✅ MATCH
+Row #1327 High Traffic (2) High Traffic (2)      87.4%    ✅ MATCH
+Row #6181 High Traffic (2)  Med Traffic (1)      66.2% ❌ MISMATCH
+Row #2953 High Traffic (2) High Traffic (2)      89.2%    ✅ MATCH
+-----------------------------------------------------------------
+
+True class distribution     : [2425 2420 2385]
+Predicted class distribution: [2741 2538 1951]
+Confusion matrix:
+ [[2336   68   21]
+ [ 390 1859  171]
+ [  15  611 1759]]
+True labels     : Counter({np.int64(0): 2425, np.int64(1): 2420, np.int64(2): 2385})
+Predicted labels: Counter({np.int64(0): 2741, np.int64(1): 2538, np.int64(2): 1951})
+--- Detailed Classification Report ---
+                  precision    recall  f1-score   support
+
+ Low Traffic (0)     0.8522    0.9633    0.9044      2425
+ Med Traffic (1)     0.7325    0.7682    0.7499      2420
+High Traffic (2)     0.9016    0.7375    0.8113      2385
+
+        accuracy                         0.8235      7230
+       macro avg     0.8288    0.8230    0.8219      7230
+    weighted avg     0.8284    0.8235    0.8220      7230
+
+📊 Confusion Matrix saved to './output/fedavg_confusion_matrix.png'.
+📊 Inference complete. Check the pop-up window for results.
+(fl_env) aniket@headnode:~/ani_work/fl_deployment$
+
+
+
+
+
+
+
+==================================================
+🎯 STARTING GLOBAL MODEL EVALUATION (UNSEEN TEST SET) Dataset= 'Greenhouse'.
+==================================================
+✅ Successfully loaded trained global model weights.
+📦 Loaded 4500 unseen test samples.
+
+🌐 GLOBAL UNSEEN TEST ACCURACY: 99.84%
+
+--- 🔍 Visual Inspection of 10 Random Test Samples ---
+Sample ID      True Label Predicted Label Confidence  Status
+Row #2128  Low Reward (0)  Low Reward (0)      90.0% ✅ MATCH
+Row #3601 High Reward (2) High Reward (2)     100.0% ✅ MATCH
+Row #2530  Low Reward (0)  Low Reward (0)     100.0% ✅ MATCH
+Row #1214 High Reward (2) High Reward (2)     100.0% ✅ MATCH
+ Row #628  Med Reward (1)  Med Reward (1)     100.0% ✅ MATCH
+Row #2255  Low Reward (0)  Low Reward (0)     100.0% ✅ MATCH
+Row #1698 High Reward (2) High Reward (2)     100.0% ✅ MATCH
+ Row #450  Low Reward (0)  Low Reward (0)     100.0% ✅ MATCH
+ Row #616 High Reward (2) High Reward (2)     100.0% ✅ MATCH
+ Row #153 High Reward (2) High Reward (2)     100.0% ✅ MATCH
+-----------------------------------------------------------------
+
+True class distribution     : [1496 1532 1472]
+Predicted class distribution: [1503 1525 1472]
+Confusion matrix:
+ [[1496    0    0]
+ [   7 1525    0]
+ [   0    0 1472]]
+True labels     : Counter({np.int64(1): 1532, np.int64(0): 1496, np.int64(2): 1472})
+Predicted labels: Counter({np.int64(1): 1525, np.int64(0): 1503, np.int64(2): 1472})
+--- Detailed Classification Report ---
+                 precision    recall  f1-score   support
+
+ Low Reward (0)     0.9953    1.0000    0.9977      1496
+ Med Reward (1)     1.0000    0.9954    0.9977      1532
+High Reward (2)     1.0000    1.0000    1.0000      1472
+
+       accuracy                         0.9984      4500
+      macro avg     0.9984    0.9985    0.9985      4500
+   weighted avg     0.9985    0.9984    0.9984      4500
+
+📊 Confusion Matrix saved to './output/fedavg_confusion_matrix.png'.
+📊 Inference complete. Check the pop-up window for results.
+
+
+
+
+(fl_env) aniket@headnode:~/ani_work/fl_deployment$ python model_predict.py
+==================================================
+🎯 STARTING GLOBAL MODEL EVALUATION (UNSEEN TEST SET) Dataset= 'Greenhouse'.
+==================================================
+✅ Successfully loaded trained global model weights.
+📦 Loaded 4500 unseen test samples.
+
+🌐 GLOBAL UNSEEN TEST ACCURACY: 99.84%
+
+--- 🔍 Visual Inspection of 10 Random Test Samples ---
+Sample ID      True Label Predicted Label Confidence  Status
+Row #1784  Low Reward (0)  Low Reward (0)     100.0% ✅ MATCH
+Row #3393  Low Reward (0)  Low Reward (0)     100.0% ✅ MATCH
+Row #2776 High Reward (2) High Reward (2)     100.0% ✅ MATCH
+Row #1675  Med Reward (1)  Med Reward (1)     100.0% ✅ MATCH
+ Row #237  Med Reward (1)  Med Reward (1)     100.0% ✅ MATCH
+Row #1711  Low Reward (0)  Low Reward (0)     100.0% ✅ MATCH
+Row #4020  Low Reward (0)  Low Reward (0)     100.0% ✅ MATCH
+Row #2700  Med Reward (1)  Med Reward (1)     100.0% ✅ MATCH
+ Row #308  Med Reward (1)  Med Reward (1)     100.0% ✅ MATCH
+Row #3184 High Reward (2) High Reward (2)     100.0% ✅ MATCH
+-----------------------------------------------------------------
+
+True class distribution     : [1496 1532 1472]
+Predicted class distribution: [1503 1525 1472]
+Confusion matrix:
+ [[1496    0    0]
+ [   7 1525    0]
+ [   0    0 1472]]
+True labels     : Counter({np.int64(1): 1532, np.int64(0): 1496, np.int64(2): 1472})
+Predicted labels: Counter({np.int64(1): 1525, np.int64(0): 1503, np.int64(2): 1472})
+--- Detailed Classification Report ---
+                 precision    recall  f1-score   support
+
+ Low Reward (0)     0.9953    1.0000    0.9977      1496
+ Med Reward (1)     1.0000    0.9954    0.9977      1532
+High Reward (2)     1.0000    1.0000    1.0000      1472
+
+       accuracy                         0.9984      4500
+      macro avg     0.9984    0.9985    0.9985      4500
+   weighted avg     0.9985    0.9984    0.9984      4500
+
+📊 Confusion Matrix saved to './output/fedavg_confusion_matrix.png'.
+📊 Inference complete. Check the pop-up window for results.

@@ -1,0 +1,52 @@
+(fl_env) aniket@headnode:~/ani_work/fl_deployment$ python prepare_tabular_data.py
+
+🔍 Checking raw missing values per column:
+irrigation_type        150
+crop_disease_status    130
+dtype: int64
+
+
+==================================================
+📊 DATASET DIMENSIONS SUMMARY FOR task.py
+   ∟ Total Samples (Rows) : 5000
+   ∟ NUM_FEATURES (Cols)  : 27  <-- Set NUM_FEATURES in task.py!
+   ∟ Target Classes       : 3  <-- Set NUM_CLASSES in task.py!
+==================================================
+
+✅ Data Preprocessed: 5000 rows with 27 input features.
+✅ Split sizes: GlobalTest= 750 ClientPool= 4250.
+✅ Saved: global_test.pt (750 samples)
+🎯 Created Global Server Test Set: global_test.pt (750 rows)
+
+--- Generating 10 Non-IID Client Partitions (Dirichlet alpha=0.5) ---
+✅ Saved: client_01.pt (357 samples)
+  ∟ Created Non-IID client_01.pt: 357 rows | Class Counts (0,1,2): [np.int64(172), np.int64(43), np.int64(142)]
+
+✅ Saved: client_02.pt (547 samples)
+  ∟ Created Non-IID client_02.pt: 547 rows | Class Counts (0,1,2): [np.int64(155), np.int64(392), np.int64(0)]
+
+✅ Saved: client_03.pt (366 samples)
+  ∟ Created Non-IID client_03.pt: 366 rows | Class Counts (0,1,2): [np.int64(28), np.int64(223), np.int64(115)]
+
+✅ Saved: client_04.pt (221 samples)
+  ∟ Created Non-IID client_04.pt: 221 rows | Class Counts (0,1,2): [np.int64(68), np.int64(151), np.int64(2)]
+
+✅ Saved: client_05.pt (475 samples)
+  ∟ Created Non-IID client_05.pt: 475 rows | Class Counts (0,1,2): [np.int64(157), np.int64(186), np.int64(132)]
+
+✅ Saved: client_06.pt (436 samples)
+  ∟ Created Non-IID client_06.pt: 436 rows | Class Counts (0,1,2): [np.int64(238), np.int64(180), np.int64(18)]
+
+✅ Saved: client_07.pt (447 samples)
+  ∟ Created Non-IID client_07.pt: 447 rows | Class Counts (0,1,2): [np.int64(447), np.int64(0), np.int64(0)]
+
+✅ Saved: client_08.pt (460 samples)
+  ∟ Created Non-IID client_08.pt: 460 rows | Class Counts (0,1,2): [np.int64(44), np.int64(40), np.int64(376)]
+
+✅ Saved: client_09.pt (754 samples)
+  ∟ Created Non-IID client_09.pt: 754 rows | Class Counts (0,1,2): [np.int64(25), np.int64(150), np.int64(579)]
+
+✅ Saved: client_10.pt (187 samples)
+  ∟ Created Non-IID client_10.pt: 187 rows | Class Counts (0,1,2): [np.int64(78), np.int64(48), np.int64(61)]
+
+✨ Dataset prepared. All .pt files successfully output to './data'.

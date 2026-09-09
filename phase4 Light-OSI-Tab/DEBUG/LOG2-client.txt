@@ -1,0 +1,41 @@
+INFO :      [RUN 2841364117818145167, ROUND 1]
+INFO :      Receiving: train message (ID: 3d21722181eb89b7eefd3c46c976cc3cf31b032db014757f90abaad1a6fc5bcf)
+INFO :      Received successfully
+INFO :      Start `flwr-clientapp` process
+INFO :
+INFO :      [RUN 2841364117818145167, ROUND 1]
+INFO :      Sending: train message (ID: a1498e083d26d38a50deb89f6baef3d7c781291fb5a6e6cd150b3c1e251c565b)
+INFO :
+INFO :      Sent successfully
+
+============================================================
+[11:52:46] 📌 Main Config CLIENT 08
+------------------------------------------------------------
+  ∟ Resource Constraint : Yes
+  ∟ Method              : Light-OSI-Tab [Proposed]
+  ∟ Dataset             : AgriYield
+============================================================
+
+[11:52:46] 📌 Client 08 local class presence: [0, 1, 2]
+[11:52:46] ⚡ Client 08: Training local VAE for 100 epochs...
+[12:02:46] ✅ Client 08: VAE local training completed in 600.03s.
+INFO :
+INFO :      [RUN 2841364117818145167, ROUND 1]
+INFO :      Receiving: evaluate message (ID: 803af90256a21edecd0acbc3397803503783a92e6189bb8fcbf4bcbca5223668)
+INFO :      Received successfully
+INFO :      Start `flwr-clientapp` process
+INFO :
+INFO :
+INFO :      [RUN 2841364117818145167, ROUND 1]
+INFO :      Sending: evaluate message (ID: 6e71b54eb3759859636c8432248d953cb9c96b089e4b787bde70309d1beb2374)
+INFO :      Sent successfully
+
+============================================================
+[12:32:46] 📌 Main Config CLIENT 08
+------------------------------------------------------------
+  ∟ Resource Constraint : Yes
+  ∟ Method              : Light-OSI-Tab [Proposed]
+  ∟ Dataset             : AgriYield
+============================================================
+
+[12:32:46] 📌 Client 08 local class presence: [0, 1, 2]

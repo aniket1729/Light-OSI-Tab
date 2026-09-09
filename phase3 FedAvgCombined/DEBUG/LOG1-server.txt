@@ -1,0 +1,567 @@
+
+
+  ∟ Dataset                        : AgriYield
+  L Resource Constraint            : No
+  ∟ Total Execution Time           : 408.41 sec
+  ∟ Final Global Accuracy          : 0.9613
+============================================================
+  ∟ Dataset                        : AgriYield
+  L Resource Constraint            : Yes
+  ∟ Total Execution Time           : 740.69 sec
+  ∟ Final Global Accuracy          : 0.8640
+============================================================
+
+
+
+============================================================
+📊 FINAL TELEMETRY SUMMARY FOR PAPER SECTION 5
+============================================================
+  ∟ Total Communication Rounds (z) : 20
+  ∟ Active Edge Clients (N)        : 0
+  ∟ Total Upstream Payload        : 3.0296 MB
+  ∟ Est. Total Bandwidth (Up+Down): 6.0593 MB
+  ∟ Total Execution Time          : 1027.40 seconds (17.12 mins)
+============================================================
+  L Resource Constraint            : No
+
+INFO :      configure_evaluate: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_evaluate: received 10 results and 0 failures
+===> Client Report -> Accuracy: 0.8833 | Samples: 60
+===> Client Report -> Accuracy: 0.9912 | Samples: 114
+===> Client Report -> Accuracy: 0.9680 | Samples: 125
+===> Client Report -> Accuracy: 0.9115 | Samples: 113
+===> Client Report -> Accuracy: 0.8095 | Samples: 42
+===> Client Report -> Accuracy: 0.8909 | Samples: 165
+===> Client Report -> Accuracy: 1.0000 | Samples: 10
+===> Client Report -> Accuracy: 0.8557 | Samples: 97
+===> Client Report -> Accuracy: 1.0000 | Samples: 39
+===> Client Report -> Accuracy: 0.9885 | Samples: 87
+📢 [Round 20] ===> Global Accuracy: 0.9261
+INFO :
+INFO :      [SUMMARY]
+INFO :      Run finished 20 round(s) in 1082.16s
+INFO :          History (loss, distributed):
+INFO :                  round 1: 1.0924228042573996
+INFO :                  round 2: 1.0061878120885208
+INFO :                  round 3: 0.9159350582691426
+INFO :                  round 4: 0.8730843172456737
+INFO :                  round 5: 0.7909346914941996
+INFO :                  round 6: 0.7267554633039544
+INFO :                  round 7: 0.6203564172129676
+INFO :                  round 8: 0.5693093758719173
+INFO :                  round 9: 0.541006451052889
+INFO :                  round 10: 0.5334313743367372
+INFO :                  round 11: 0.4118434401456389
+INFO :                  round 12: 0.37344433608390565
+INFO :                  round 13: 0.372991279469357
+INFO :                  round 14: 0.2952558500304197
+INFO :                  round 15: 0.25166228600174295
+INFO :                  round 16: 0.24718834677746107
+INFO :                  round 17: 0.1967013437813175
+INFO :                  round 18: 0.1547459161719045
+INFO :                  round 19: 0.18125287378113936
+INFO :                  round 20: 0.14790819692419965
+INFO :          History (metrics, distributed, evaluate):
+INFO :          {'accuracy': [(1, 0.4025821596244131),
+INFO :                        (2, 0.4753521126760563),
+INFO :                        (3, 0.5269953051643192),
+INFO :                        (4, 0.5645539906103286),
+INFO :                        (5, 0.5821596244131455),
+INFO :                        (6, 0.6408450704225352),
+INFO :                        (7, 0.6936619718309859),
+INFO :                        (8, 0.6924882629107981),
+INFO :                        (9, 0.7417840375586855),
+INFO :                        (10, 0.7640845070422535),
+INFO :                        (11, 0.7805164319248826),
+INFO :                        (12, 0.8262910798122066),
+INFO :                        (13, 0.8274647887323944),
+INFO :                        (14, 0.8532863849765259),
+INFO :                        (15, 0.8873239436619719),
+INFO :                        (16, 0.8967136150234741),
+INFO :                        (17, 0.9061032863849765),
+INFO :                        (18, 0.926056338028169),
+INFO :                        (19, 0.926056338028169),
+INFO :                        (20, 0.926056338028169)]}
+
+
+============================================================
+📊 FINAL TELEMETRY SUMMARY FOR PAPER SECTION 5
+============================================================
+  ∟ Total Communication Rounds (z) : 20
+  ∟ Active Edge Clients (N)        : 0
+  ∟ Total Upstream Payload        : 3.0296 MB
+  ∟ Est. Total Bandwidth (Up+Down): 6.0593 MB
+  ∟ Total Execution Time          : 1090.73 seconds (18.18 mins)
+============================================================
+  L Resource Constraint            : Yes
+
+INFO :      configure_evaluate: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_evaluate: received 10 results and 0 failures
+===> Client Report -> Accuracy: 0.9697 | Samples: 165
+===> Client Report -> Accuracy: 1.0000 | Samples: 39
+===> Client Report -> Accuracy: 0.8500 | Samples: 60
+===> Client Report -> Accuracy: 0.9760 | Samples: 125
+===> Client Report -> Accuracy: 1.0000 | Samples: 114
+===> Client Report -> Accuracy: 1.0000 | Samples: 42
+===> Client Report -> Accuracy: 0.9278 | Samples: 97
+===> Client Report -> Accuracy: 1.0000 | Samples: 10
+===> Client Report -> Accuracy: 0.9204 | Samples: 113
+===> Client Report -> Accuracy: 0.9885 | Samples: 87
+📢 [Round 20] ===> Global Accuracy: 0.9601
+INFO :
+INFO :      [SUMMARY]
+INFO :      Run finished 20 round(s) in 1142.85s
+INFO :          History (loss, distributed):
+INFO :                  round 1: 1.0911735778438374
+INFO :                  round 2: 0.9965374371115591
+INFO :                  round 3: 0.916724657736054
+INFO :                  round 4: 0.8079072798869
+INFO :                  round 5: 0.7554241416083884
+INFO :                  round 6: 0.6640091774386174
+INFO :                  round 7: 0.5696413377846455
+INFO :                  round 8: 0.5110390960772307
+INFO :                  round 9: 0.4582041869587112
+INFO :                  round 10: 0.40430308919522406
+INFO :                  round 11: 0.35159477608785594
+INFO :                  round 12: 0.30228243315561804
+INFO :                  round 13: 0.260860618543833
+INFO :                  round 14: 0.25417764753908323
+INFO :                  round 15: 0.20522063896168274
+INFO :                  round 16: 0.17408174013939223
+INFO :                  round 17: 0.15594226495804706
+INFO :                  round 18: 0.12630918799809884
+INFO :                  round 19: 0.1351058931606975
+INFO :                  round 20: 0.10434682086193327
+INFO :          History (metrics, distributed, evaluate):
+INFO :          {'accuracy': [(1, 0.3591549295774648),
+INFO :                        (2, 0.5269953051643192),
+INFO :                        (3, 0.5610328638497653),
+INFO :                        (4, 0.6255868544600939),
+INFO :                        (5, 0.67018779342723),
+INFO :                        (6, 0.7077464788732394),
+INFO :                        (7, 0.7523474178403756),
+INFO :                        (8, 0.7699530516431925),
+INFO :                        (9, 0.7922535211267606),
+INFO :                        (10, 0.8192488262910798),
+INFO :                        (11, 0.8556338028169014),
+INFO :                        (12, 0.8767605633802817),
+INFO :                        (13, 0.9002347417840375),
+INFO :                        (14, 0.8896713615023474),
+INFO :                        (15, 0.9143192488262911),
+INFO :                        (16, 0.9330985915492958),
+INFO :                        (17, 0.9448356807511737),
+INFO :                        (18, 0.9683098591549296),
+INFO :                        (19, 0.937793427230047),
+INFO :                        (20, 0.960093896713615)]}
+INFO :
+INFO :
+(fl_env) aniket@headnode:~/ani_work/fl_deployment$
+
+
+
+  ∟ Dataset                        : AgriYield
+  L Resource Constraint            : No
+  ∟ Total Execution Time           : 996.93 seconds (16.62 mins)
+  ∟ Final Global Accuracy          : 0.9425
+============================================================
+  ∟ Dataset                        : AgriYield
+  L Resource Constraint            : Yes
+  ∟ Total Execution Time           : 843.87 seconds (14.06 mins)
+  ∟ Final Global Accuracy          : 0.9554
+============================================================
+  ∟ Dataset                        : TrafficVol
+  L Resource Constraint            : No
+  ∟ Total Execution Time           : 9521.81 seconds (158.70 mins)
+  ∟ Final Global Accuracy          : 0.8501
+============================================================
+  ∟ Dataset                        : TrafficVol
+  L Resource Constraint            : Yes
+  ∟ Total Execution Time           : 7729.94 seconds (128.83 mins)
+  ∟ Final Global Accuracy          : 0.8215
+============================================================
+  ∟ Dataset                        : Greenhouse
+  L Resource Constraint            : No
+  ∟ Total Execution Time           : 4522.51 seconds (75.38 mins)
+  ∟ Final Global Accuracy          : 0.9992
+============================================================
+  ∟ Dataset                        : Greenhouse
+  L Resource Constraint            : Yes
+  ∟ Total Execution Time           : 4695.23 seconds (78.25 mins)
+  ∟ Final Global Accuracy          : 0.9984
+============================================================
+
+
+
+
+============================================================
+📊 FINAL TELEMETRY SUMMARY FOR PAPER SECTION 5
+============================================================
+  ∟ Dataset                        : AgriYield
+  L Resource Constraint            : No
+  ∟ Total Communication Rounds (z) : 20
+  ∟ Active Edge Clients (N)        : 10
+  ∟ Total Upstream Payload         : 3.0296 MB
+  ∟ Est. Total Bandwidth           : 6.0593 MB    <==== Est. Total Communication (Up+Down, symmetric)
+  ∟ Total Execution Time           : 996.93 seconds (16.62 mins)
+  ∟ Final Global Accuracy          : 0.9425
+============================================================
+
+INFO :
+INFO :      [SUMMARY]
+INFO :      Run finished 20 round(s) in 1045.28s
+INFO :          History (loss, distributed):
+INFO :                  round 1: 1.0948264802775474
+INFO :                  round 2: 1.0572242033383656
+INFO :                  round 3: 1.014279657756219
+INFO :                  round 4: 0.9290751262694738
+INFO :                  round 5: 0.8360557526944669
+INFO :                  round 6: 0.7832815941093061
+INFO :                  round 7: 0.7559166175658714
+INFO :                  round 8: 0.6182952365387633
+INFO :                  round 9: 0.6158206192251872
+INFO :                  round 10: 0.5699983097114404
+INFO :                  round 11: 0.4848960990593397
+INFO :                  round 12: 0.4443338958135513
+INFO :                  round 13: 0.3973897157779112
+INFO :                  round 14: 0.3885564977546909
+INFO :                  round 15: 0.5284518778286962
+INFO :                  round 16: 0.2674054580799658
+INFO :                  round 17: 0.21156374020655005
+INFO :                  round 18: 0.21398462481280797
+INFO :                  round 19: 0.20414354163659257
+INFO :                  round 20: 0.158321831956344
+INFO :          History (metrics, distributed, evaluate):
+INFO :          {'accuracy': [(1, 0.37910798122065725),
+INFO :                        (2, 0.431924882629108),
+INFO :                        (3, 0.47769953051643194),
+INFO :                        (4, 0.5164319248826291),
+INFO :                        (5, 0.5610328638497653),
+INFO :                        (6, 0.602112676056338),
+INFO :                        (7, 0.6267605633802817),
+INFO :                        (8, 0.7112676056338029),
+INFO :                        (9, 0.7359154929577465),
+INFO :                        (10, 0.7605633802816901),
+INFO :                        (11, 0.7687793427230047),
+INFO :                        (12, 0.7946009389671361),
+INFO :                        (13, 0.8063380281690141),
+INFO :                        (14, 0.8333333333333334),
+INFO :                        (15, 0.8720657276995305),
+INFO :                        (16, 0.8802816901408451),
+INFO :                        (17, 0.897887323943662),
+INFO :                        (18, 0.8814553990610329),
+INFO :                        (19, 0.9190140845070423),
+INFO :                        (20, 0.9424882629107981)]}
+INFO :
+INFO :
+
+
+============================================================
+📊 FINAL TELEMETRY SUMMARY FOR PAPER SECTION 5
+============================================================
+  ∟ Dataset                        : AgriYield
+  L Resource Constraint            : Yes
+  ∟ Total Communication Rounds (z) : 20
+  ∟ Active Edge Clients (N)        : 10
+  ∟ Total Upstream Payload         : 3.0296 MB
+  ∟ Est. Total Bandwidth           : 6.0593 MB    <==== Est. Total Communication (Up+Down, symmetric)
+  ∟ Total Execution Time           : 843.87 seconds (14.06 mins)
+  ∟ Final Global Accuracy          : 0.9554
+============================================================
+
+INFO :
+INFO :      [SUMMARY]
+INFO :      Run finished 20 round(s) in 886.25s
+INFO :          History (loss, distributed):
+INFO :                  round 1: 1.0536736493029504
+INFO :                  round 2: 0.9818916014382537
+INFO :                  round 3: 0.935187835648586
+INFO :                  round 4: 0.8171571217599749
+INFO :                  round 5: 0.769848386070608
+INFO :                  round 6: 0.6503639908446253
+INFO :                  round 7: 0.6059418874071307
+INFO :                  round 8: 0.47679570205334765
+INFO :                  round 9: 0.4682278711498527
+INFO :                  round 10: 0.38015024335136716
+INFO :                  round 11: 0.3853546808087901
+INFO :                  round 12: 0.3037419687068973
+INFO :                  round 13: 0.2723131435057166
+INFO :                  round 14: 0.2635824682239247
+INFO :                  round 15: 0.22883592247022885
+INFO :                  round 16: 0.21817533949134815
+INFO :                  round 17: 0.15121871532004397
+INFO :                  round 18: 0.16032094380352646
+INFO :                  round 19: 0.13596449667010616
+INFO :                  round 20: 0.14089085292844472
+INFO :          History (metrics, distributed, evaluate):
+INFO :          {'accuracy': [(1, 0.4460093896713615),
+INFO :                        (2, 0.5152582159624414),
+INFO :                        (3, 0.5434272300469484),
+INFO :                        (4, 0.6267605633802817),
+INFO :                        (5, 0.6384976525821596),
+INFO :                        (6, 0.687793427230047),
+INFO :                        (7, 0.7124413145539906),
+INFO :                        (8, 0.7793427230046949),
+INFO :                        (9, 0.7910798122065728),
+INFO :                        (10, 0.8415492957746479),
+INFO :                        (11, 0.8392018779342723),
+INFO :                        (12, 0.8744131455399061),
+INFO :                        (13, 0.8943661971830986),
+INFO :                        (14, 0.8908450704225352),
+INFO :                        (15, 0.9178403755868545),
+INFO :                        (16, 0.9143192488262911),
+INFO :                        (17, 0.9366197183098591),
+INFO :                        (18, 0.9483568075117371),
+INFO :                        (19, 0.9577464788732394),
+INFO :                        (20, 0.9553990610328639)]}
+INFO :
+INFO :
+
+
+============================================================
+📊 FINAL TELEMETRY SUMMARY FOR PAPER SECTION 5
+============================================================
+  ∟ Dataset                        : TrafficVol
+  L Resource Constraint            : No
+  ∟ Total Communication Rounds (z) : 20
+  ∟ Active Edge Clients (N)        : 10
+  ∟ Total Upstream Payload         : 4.8851 MB
+  ∟ Est. Total Bandwidth           : 9.7702 MB    <==== Est. Total Communication (Up+Down, symmetric)
+  ∟ Total Execution Time           : 9521.81 seconds (158.70 mins)
+  ∟ Final Global Accuracy          : 0.8501
+============================================================
+
+INFO :
+INFO :      [SUMMARY]
+INFO :      Run finished 20 round(s) in 10087.15s
+INFO :          History (loss, distributed):
+INFO :                  round 1: 0.7707741638747905
+INFO :                  round 2: 0.515188151392101
+INFO :                  round 3: 0.513386302608278
+INFO :                  round 4: 0.5224732969045403
+INFO :                  round 5: 0.4988273091846197
+INFO :                  round 6: 0.47877606099827585
+INFO :                  round 7: 0.43275479414657153
+INFO :                  round 8: 0.43071526136291044
+INFO :                  round 9: 0.4982342485630314
+INFO :                  round 10: 0.4627589774656485
+INFO :                  round 11: 0.415481368879403
+INFO :                  round 12: 0.4270665030387612
+INFO :                  round 13: 0.39995594838112675
+INFO :                  round 14: 0.40193667569402
+INFO :                  round 15: 0.3988513845630069
+INFO :                  round 16: 0.4072035740376681
+INFO :                  round 17: 0.39945099943860357
+INFO :                  round 18: 0.4307680005429207
+INFO :                  round 19: 0.39418204691542125
+INFO :                  round 20: 0.36024537660534295
+INFO :          History (metrics, distributed, evaluate):
+INFO :          {'accuracy': [(1, 0.6573170731707317),
+INFO :                        (2, 0.7686585365853659),
+INFO :                        (3, 0.7769512195121951),
+INFO :                        (4, 0.7879268292682927),
+INFO :                        (5, 0.7993902439024391),
+INFO :                        (6, 0.8060975609756098),
+INFO :                        (7, 0.8270731707317073),
+INFO :                        (8, 0.8192682926829268),
+INFO :                        (9, 0.8145121951219512),
+INFO :                        (10, 0.8239024390243902),
+INFO :                        (11, 0.8213414634146341),
+INFO :                        (12, 0.8115853658536586),
+INFO :                        (13, 0.8323170731707317),
+INFO :                        (14, 0.8178048780487804),
+INFO :                        (15, 0.8348780487804878),
+INFO :                        (16, 0.8373170731707317),
+INFO :                        (17, 0.8319512195121951),
+INFO :                        (18, 0.8419512195121951),
+INFO :                        (19, 0.8314634146341463),
+INFO :                        (20, 0.8501219512195122)]}
+INFO :
+INFO :
+
+
+
+============================================================
+📊 FINAL TELEMETRY SUMMARY FOR PAPER SECTION 5
+============================================================
+  ∟ Dataset                        : TrafficVol
+  L Resource Constraint            : Yes
+  ∟ Total Communication Rounds (z) : 20
+  ∟ Active Edge Clients (N)        : 10
+  ∟ Total Upstream Payload         : 4.8851 MB
+  ∟ Est. Total Bandwidth           : 9.7702 MB    <==== Est. Total Communication (Up+Down, symmetric)
+  ∟ Total Execution Time           : 7729.94 seconds (128.83 mins)
+  ∟ Final Global Accuracy          : 0.8215
+============================================================
+
+INFO :
+INFO :      [SUMMARY]
+INFO :      Run finished 20 round(s) in 8127.01s
+INFO :          History (loss, distributed):
+INFO :                  round 1: 0.8365001070277949
+INFO :                  round 2: 0.5912200203869784
+INFO :                  round 3: 0.5186704825059666
+INFO :                  round 4: 0.4900554203237893
+INFO :                  round 5: 0.5007855090390065
+INFO :                  round 6: 0.4943337850385692
+INFO :                  round 7: 0.4696995202100836
+INFO :                  round 8: 0.45217024093869973
+INFO :                  round 9: 0.4605970354296237
+INFO :                  round 10: 0.446866060779771
+INFO :                  round 11: 0.4362980118788878
+INFO :                  round 12: 0.46583835967853593
+INFO :                  round 13: 0.4448181913791037
+INFO :                  round 14: 0.4390438559218732
+INFO :                  round 15: 0.423832020704523
+INFO :                  round 16: 0.4510910633666316
+INFO :                  round 17: 0.43804853148741
+INFO :                  round 18: 0.41259672862292374
+INFO :                  round 19: 0.4249306625693587
+INFO :                  round 20: 0.40071307418810037
+INFO :          History (metrics, distributed, evaluate):
+INFO :          {'accuracy': [(1, 0.5792682926829268),
+INFO :                        (2, 0.728780487804878),
+INFO :                        (3, 0.7730487804878049),
+INFO :                        (4, 0.7819512195121952),
+INFO :                        (5, 0.7729268292682927),
+INFO :                        (6, 0.78),
+INFO :                        (7, 0.7837804878048781),
+INFO :                        (8, 0.8007317073170732),
+INFO :                        (9, 0.7965853658536586),
+INFO :                        (10, 0.8032926829268293),
+INFO :                        (11, 0.8101219512195122),
+INFO :                        (12, 0.8073170731707318),
+INFO :                        (13, 0.8014634146341464),
+INFO :                        (14, 0.8110975609756098),
+INFO :                        (15, 0.8076829268292683),
+INFO :                        (16, 0.8029268292682927),
+INFO :                        (17, 0.8026829268292683),
+INFO :                        (18, 0.8156097560975609),
+INFO :                        (19, 0.815),
+INFO :                        (20, 0.8214634146341463)]}
+INFO :
+
+
+
+
+============================================================
+📊 FINAL TELEMETRY SUMMARY FOR PAPER SECTION 5
+============================================================
+  ∟ Dataset                        : Greenhouse
+  L Resource Constraint            : No
+  ∟ Total Communication Rounds (z) : 20
+  ∟ Active Edge Clients (N)        : 10
+  ∟ Total Upstream Payload         : 3.4203 MB
+  ∟ Est. Total Bandwidth           : 6.8405 MB    <==== Est. Total Communication (Up+Down, symmetric)
+  ∟ Total Execution Time           : 4522.51 seconds (75.38 mins)
+  ∟ Final Global Accuracy          : 0.9992
+============================================================
+
+INFO :
+INFO :      [SUMMARY]
+INFO :      Run finished 20 round(s) in 4751.24s
+INFO :          History (loss, distributed):
+INFO :                  round 1: 0.06869584355095176
+INFO :                  round 2: 0.010938312406944579
+INFO :                  round 3: 0.00489804039491871
+INFO :                  round 4: 0.006742669173136327
+INFO :                  round 5: 0.007522562839659179
+INFO :                  round 6: 0.005827833286821868
+INFO :                  round 7: 0.008156804619756701
+INFO :                  round 8: 0.0058132405642491915
+INFO :                  round 9: 0.00439370942562641
+INFO :                  round 10: 0.0068362268701669384
+INFO :                  round 11: 0.0049800616734346536
+INFO :                  round 12: 0.014177963886141877
+INFO :                  round 13: 0.011217929497145332
+INFO :                  round 14: 0.00940092129151553
+INFO :                  round 15: 0.00884204106461013
+INFO :                  round 16: 0.009559208112698876
+INFO :                  round 17: 0.015483243522901816
+INFO :                  round 18: 0.0016508424902967444
+INFO :                  round 19: 0.01143130858816086
+INFO :                  round 20: 0.002950189895992375
+INFO :          History (metrics, distributed, evaluate):
+INFO :          {'accuracy': [(1, 0.9986282578875172),
+INFO :                        (2, 0.9976484420928865),
+INFO :                        (3, 0.9990201842053694),
+INFO :                        (4, 0.9990201842053694),
+INFO :                        (5, 0.9988242210464433),
+INFO :                        (6, 0.9984322947285911),
+INFO :                        (7, 0.9986282578875172),
+INFO :                        (8, 0.9984322947285911),
+INFO :                        (9, 0.9992161473642955),
+INFO :                        (10, 0.9986282578875172),
+INFO :                        (11, 0.9986282578875172),
+INFO :                        (12, 0.9984322947285911),
+INFO :                        (13, 0.9984322947285911),
+INFO :                        (14, 0.9984322947285911),
+INFO :                        (15, 0.9982363315696648),
+INFO :                        (16, 0.9986282578875172),
+INFO :                        (17, 0.9988242210464433),
+INFO :                        (18, 0.9996080736821478),
+INFO :                        (19, 0.9980403684107387),
+INFO :                        (20, 0.9992161473642955)]}
+INFO :
+INFO :
+
+
+============================================================
+📊 FINAL TELEMETRY SUMMARY FOR PAPER SECTION 5
+============================================================
+  ∟ Dataset                        : Greenhouse
+  L Resource Constraint            : Yes
+  ∟ Total Communication Rounds (z) : 20
+  ∟ Active Edge Clients (N)        : 10
+  ∟ Total Upstream Payload         : 3.4203 MB
+  ∟ Est. Total Bandwidth           : 6.8405 MB    <==== Est. Total Communication (Up+Down, symmetric)
+  ∟ Total Execution Time           : 4695.23 seconds (78.25 mins)
+  ∟ Final Global Accuracy          : 0.9984
+============================================================
+
+INFO :
+INFO :      [SUMMARY]
+INFO :      Run finished 20 round(s) in 4962.89s
+INFO :          History (loss, distributed):
+INFO :                  round 1: 0.07597686692859054
+INFO :                  round 2: 0.00827917391134971
+INFO :                  round 3: 0.007454244789227947
+INFO :                  round 4: 0.011202760926643534
+INFO :                  round 5: 0.009799232463376857
+INFO :                  round 6: 0.006215748341005574
+INFO :                  round 7: 0.027784506065057866
+INFO :                  round 8: 0.011161691076071406
+INFO :                  round 9: 0.004171454699626047
+INFO :                  round 10: 0.006398017850216246
+INFO :                  round 11: 0.006029069852490696
+INFO :                  round 12: 0.006604445900561385
+INFO :                  round 13: 0.0043802325138551125
+INFO :                  round 14: 0.009671106315316407
+INFO :                  round 15: 0.0055172028366496945
+INFO :                  round 16: 0.004068771249013491
+INFO :                  round 17: 0.0105679849914915
+INFO :                  round 18: 0.0072484244741649086
+INFO :                  round 19: 0.006106507790182991
+INFO :                  round 20: 0.007428475879363351
+INFO :          History (metrics, distributed, evaluate):
+INFO :          {'accuracy': [(1, 0.9984322947285911),
+INFO :                        (2, 0.9982363315696648),
+INFO :                        (3, 0.9982363315696648),
+INFO :                        (4, 0.9980403684107387),
+INFO :                        (5, 0.9984322947285911),
+INFO :                        (6, 0.9984322947285911),
+INFO :                        (7, 0.9982363315696648),
+INFO :                        (8, 0.9980403684107387),
+INFO :                        (9, 0.9992161473642955),
+INFO :                        (10, 0.9990201842053694),
+INFO :                        (11, 0.9984322947285911),
+INFO :                        (12, 0.9978444052518126),
+INFO :                        (13, 0.9986282578875172),
+INFO :                        (14, 0.9982363315696648),
+INFO :                        (15, 0.9984322947285911),
+INFO :                        (16, 0.9990201842053694),
+INFO :                        (17, 0.9980403684107387),
+INFO :                        (18, 0.9982363315696648),
+INFO :                        (19, 0.9988242210464433),
+INFO :                        (20, 0.9984322947285911)]}
+INFO :
+INFO :

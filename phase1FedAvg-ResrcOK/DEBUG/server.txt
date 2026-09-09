@@ -1,0 +1,721 @@
+Using SuperLink: local-deployment (127.0.0.1:9093)
+Successfully started run 15949454708910894397
+INFO :      Starting logstream for run_id `15949454708910894397`
+INFO :      Start `flwr-serverapp` process
+WARNING :   Skipping `flwr` dependency from app requirements to avoid replacing the running Flower installation.
+INFO :      Created env for run in: /home/aniket/.flwr/runtime-envs/15949454708910894397
+INFO :      Installing application dependencies...
+INFO :      Installed: [alembic==1.19.0, certifi==2026.7.22, cffi==2.1.1, charset-normalizer==3.4.9, click==8.4.2, cryptography==46.0.7, cuda-bindings==13.3.1, cuda-pathfinder==1.6.0, cuda-toolkit==13.0.3.0, filelock==3.32.2, fsspec==2026.7.0, greenlet==3.5.4, grpcio-health-checking==1.81.1, grpcio==1.83.0, idna==3.18, iterators==0.0.2, jinja2==3.1.6, joblib==1.5.3, mako==1.4.1, markdown-it-py==4.2.0, markupsafe==3.0.3, mdurl==0.1.2, mpmath==1.3.0, narwhals==2.24.0, networkx==3.6.1, numpy==2.5.1, nvidia-cublas==13.1.1.3, nvidia-cuda-cupti==13.0.85, nvidia-cuda-nvrtc==13.0.88, nvidia-cuda-runtime==13.0.96, nvidia-cudnn-cu13==9.20.0.48, nvidia-cufft==12.0.0.61, nvidia-cufile==1.15.1.6, nvidia-curand==10.4.0.35, nvidia-cusolver==12.0.4.66, nvidia-cusparse==12.6.3.3, nvidia-cusparselt-cu13==0.8.1, nvidia-nccl-cu13==2.29.7, nvidia-nvjitlink==13.3.33, nvidia-nvshmem-cu13==3.4.5, nvidia-nvtx==13.0.85, packaging==25.0, pandas==3.0.5, pathspec==0.12.1, pillow==12.3.0, protobuf==6.33.6, pycparser==3.0, pycryptodome==3.23.0, pygments==2.20.0, python-dateutil==2.9.0.post0, pyyaml==6.0.3, requests==2.34.2, rich==14.3.4, scikit-learn==1.9.0, scipy==1.18.0, setuptools==83.0.0, shellingham==1.5.4, six==1.17.0, sqlalchemy==2.0.51, sympy==1.14.0, threadpoolctl==3.6.0, tomli-w==1.2.0, tomli==2.4.1, torch==2.13.0, torchvision==0.28.0, triton==3.7.1, typer==0.20.1, typing-extensions==4.16.0, urllib3==2.7.0, uv==0.11.33]
+INFO :      App dependencies installed successfully via uv sync.
+INFO :      Starting Flower ServerApp, config: num_rounds=20, no round_timeout
+INFO :
+INFO :      [INIT]
+INFO :      Using initial global parameters provided by strategy
+INFO :      Starting evaluation of initial global parameters
+INFO :      Evaluation returned no results (`None`)
+INFO :
+INFO :      [ROUND 1]
+--- 🛡️ [NEW CLIENT DETECTED] ---
+Status: Client added to Wait-List | Client ID: 7620979107420936161
+----------------------------------
+
+--- 🛡️ [NEW CLIENT DETECTED] ---
+Status: Client added to Wait-List | Client ID: 3264538764546688938
+----------------------------------
+
+--- 🛡️ [NEW CLIENT DETECTED] ---
+Status: Client added to Wait-List | Client ID: 2791344474631746541
+----------------------------------
+
+--- 🛡️ [NEW CLIENT DETECTED] ---
+Status: Client added to Wait-List | Client ID: 7878848679957133516
+----------------------------------
+
+--- 🛡️ [NEW CLIENT DETECTED] ---
+Status: Client added to Wait-List | Client ID: 2275719857479897267
+----------------------------------
+
+--- 🛡️ [NEW CLIENT DETECTED] ---
+Status: Client added to Wait-List | Client ID: 16389684529795891729
+----------------------------------
+
+--- 🛡️ [NEW CLIENT DETECTED] ---
+Status: Client added to Wait-List | Client ID: 14620615632173984244
+----------------------------------
+
+--- 🛡️ [NEW CLIENT DETECTED] ---
+Status: Client added to Wait-List | Client ID: 17571580610709961972
+----------------------------------
+
+--- 🛡️ [NEW CLIENT DETECTED] ---
+Status: Client added to Wait-List | Client ID: 17905107777186651221
+----------------------------------
+
+--- 🛡️ [NEW CLIENT DETECTED] ---
+Status: Client added to Wait-List | Client ID: 6420996540023219196
+----------------------------------
+
+INFO :      configure_fit: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_fit: received 10 results and 0 failures
+
+============================================================
+🚀 FEDERATED LEARNING EXPERIMENT STARTED
+============================================================
+
+📦 [ROUND 1/20] ===> Received updates from 10 clients.
+   ∟ ===> Client 1 sent: 15.51 KB
+   ∟ ===> Client 2 sent: 15.51 KB
+   ∟ ===> Client 3 sent: 15.51 KB
+   ∟ ===> Client 4 sent: 15.51 KB
+   ∟ ===> Client 5 sent: 15.51 KB
+   ∟ ===> Client 6 sent: 15.51 KB
+   ∟ ===> Client 7 sent: 15.51 KB
+   ∟ ===> Client 8 sent: 15.51 KB
+   ∟ ===> Client 9 sent: 15.51 KB
+   ∟ ===> Client 10 sent: 15.51 KB
+   ∟ Upstream Traffic in Round 1: 0.1515 MB i.e. 155.12 KB
+WARNING :   No fit_metrics_aggregation_fn provided
+INFO :      configure_evaluate: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_evaluate: received 10 results and 0 failures
+===> Client Report -> Accuracy: 0.7000 | Samples: 90
+===> Client Report -> Accuracy: 0.4861 | Samples: 72
+===> Client Report -> Accuracy: 0.4889 | Samples: 45
+===> Client Report -> Accuracy: 0.1921 | Samples: 151
+===> Client Report -> Accuracy: 0.1739 | Samples: 92
+===> Client Report -> Accuracy: 0.6477 | Samples: 88
+===> Client Report -> Accuracy: 0.7182 | Samples: 110
+===> Client Report -> Accuracy: 0.4865 | Samples: 74
+===> Client Report -> Accuracy: 0.3947 | Samples: 38
+===> Client Report -> Accuracy: 0.4526 | Samples: 95
+📢 [Round 1] ===> Global Accuracy: 0.4620
+INFO :
+INFO :      [ROUND 2]
+INFO :      configure_fit: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_fit: received 10 results and 0 failures
+
+📦 [ROUND 2/20] ===> Received updates from 10 clients.
+   ∟ ===> Client 1 sent: 15.51 KB
+   ∟ ===> Client 2 sent: 15.51 KB
+   ∟ ===> Client 3 sent: 15.51 KB
+   ∟ ===> Client 4 sent: 15.51 KB
+   ∟ ===> Client 5 sent: 15.51 KB
+   ∟ ===> Client 6 sent: 15.51 KB
+   ∟ ===> Client 7 sent: 15.51 KB
+   ∟ ===> Client 8 sent: 15.51 KB
+   ∟ ===> Client 9 sent: 15.51 KB
+   ∟ ===> Client 10 sent: 15.51 KB
+   ∟ Upstream Traffic in Round 2: 0.1515 MB i.e. 155.12 KB
+INFO :      configure_evaluate: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_evaluate: received 10 results and 0 failures
+===> Client Report -> Accuracy: 0.5263 | Samples: 95
+===> Client Report -> Accuracy: 0.5000 | Samples: 72
+===> Client Report -> Accuracy: 0.5263 | Samples: 38
+===> Client Report -> Accuracy: 0.2391 | Samples: 92
+===> Client Report -> Accuracy: 0.6591 | Samples: 88
+===> Client Report -> Accuracy: 0.7545 | Samples: 110
+===> Client Report -> Accuracy: 0.6778 | Samples: 90
+===> Client Report -> Accuracy: 0.6667 | Samples: 45
+===> Client Report -> Accuracy: 0.2781 | Samples: 151
+===> Client Report -> Accuracy: 0.5000 | Samples: 74
+📢 [Round 2] ===> Global Accuracy: 0.5135
+INFO :
+INFO :      [ROUND 3]
+INFO :      configure_fit: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_fit: received 10 results and 0 failures
+
+📦 [ROUND 3/20] ===> Received updates from 10 clients.
+   ∟ ===> Client 1 sent: 15.51 KB
+   ∟ ===> Client 2 sent: 15.51 KB
+   ∟ ===> Client 3 sent: 15.51 KB
+   ∟ ===> Client 4 sent: 15.51 KB
+   ∟ ===> Client 5 sent: 15.51 KB
+   ∟ ===> Client 6 sent: 15.51 KB
+   ∟ ===> Client 7 sent: 15.51 KB
+   ∟ ===> Client 8 sent: 15.51 KB
+   ∟ ===> Client 9 sent: 15.51 KB
+   ∟ ===> Client 10 sent: 15.51 KB
+   ∟ Upstream Traffic in Round 3: 0.1515 MB i.e. 155.12 KB
+INFO :      configure_evaluate: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_evaluate: received 10 results and 0 failures
+===> Client Report -> Accuracy: 0.8182 | Samples: 110
+===> Client Report -> Accuracy: 0.1630 | Samples: 92
+===> Client Report -> Accuracy: 0.7500 | Samples: 88
+===> Client Report -> Accuracy: 0.7444 | Samples: 90
+===> Client Report -> Accuracy: 0.2848 | Samples: 151
+===> Client Report -> Accuracy: 0.5000 | Samples: 38
+===> Client Report -> Accuracy: 0.7556 | Samples: 45
+===> Client Report -> Accuracy: 0.5053 | Samples: 95
+===> Client Report -> Accuracy: 0.4865 | Samples: 74
+===> Client Report -> Accuracy: 0.5972 | Samples: 72
+📢 [Round 3] ===> Global Accuracy: 0.5392
+INFO :
+INFO :      [ROUND 4]
+INFO :      configure_fit: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_fit: received 10 results and 0 failures
+
+📦 [ROUND 4/20] ===> Received updates from 10 clients.
+   ∟ ===> Client 1 sent: 15.51 KB
+   ∟ ===> Client 2 sent: 15.51 KB
+   ∟ ===> Client 3 sent: 15.51 KB
+   ∟ ===> Client 4 sent: 15.51 KB
+   ∟ ===> Client 5 sent: 15.51 KB
+   ∟ ===> Client 6 sent: 15.51 KB
+   ∟ ===> Client 7 sent: 15.51 KB
+   ∟ ===> Client 8 sent: 15.51 KB
+   ∟ ===> Client 9 sent: 15.51 KB
+   ∟ ===> Client 10 sent: 15.51 KB
+   ∟ Upstream Traffic in Round 4: 0.1515 MB i.e. 155.12 KB
+INFO :      configure_evaluate: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_evaluate: received 10 results and 0 failures
+===> Client Report -> Accuracy: 0.7273 | Samples: 88
+===> Client Report -> Accuracy: 0.7889 | Samples: 90
+===> Client Report -> Accuracy: 0.2609 | Samples: 92
+===> Client Report -> Accuracy: 0.7909 | Samples: 110
+===> Client Report -> Accuracy: 0.5417 | Samples: 72
+===> Client Report -> Accuracy: 0.7333 | Samples: 45
+===> Client Report -> Accuracy: 0.3576 | Samples: 151
+===> Client Report -> Accuracy: 0.5789 | Samples: 38
+===> Client Report -> Accuracy: 0.6526 | Samples: 95
+===> Client Report -> Accuracy: 0.6081 | Samples: 74
+📢 [Round 4] ===> Global Accuracy: 0.5860
+INFO :
+INFO :      [ROUND 5]
+INFO :      configure_fit: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_fit: received 10 results and 0 failures
+
+📦 [ROUND 5/20] ===> Received updates from 10 clients.
+   ∟ ===> Client 1 sent: 15.51 KB
+   ∟ ===> Client 2 sent: 15.51 KB
+   ∟ ===> Client 3 sent: 15.51 KB
+   ∟ ===> Client 4 sent: 15.51 KB
+   ∟ ===> Client 5 sent: 15.51 KB
+   ∟ ===> Client 6 sent: 15.51 KB
+   ∟ ===> Client 7 sent: 15.51 KB
+   ∟ ===> Client 8 sent: 15.51 KB
+   ∟ ===> Client 9 sent: 15.51 KB
+   ∟ ===> Client 10 sent: 15.51 KB
+   ∟ Upstream Traffic in Round 5: 0.1515 MB i.e. 155.12 KB
+INFO :      configure_evaluate: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_evaluate: received 10 results and 0 failures
+===> Client Report -> Accuracy: 0.8667 | Samples: 90
+===> Client Report -> Accuracy: 0.5789 | Samples: 38
+===> Client Report -> Accuracy: 0.8068 | Samples: 88
+===> Client Report -> Accuracy: 0.8222 | Samples: 45
+===> Client Report -> Accuracy: 0.3907 | Samples: 151
+===> Client Report -> Accuracy: 0.7909 | Samples: 110
+===> Client Report -> Accuracy: 0.7368 | Samples: 95
+===> Client Report -> Accuracy: 0.4239 | Samples: 92
+===> Client Report -> Accuracy: 0.5676 | Samples: 74
+===> Client Report -> Accuracy: 0.7083 | Samples: 72
+📢 [Round 5] ===> Global Accuracy: 0.6503
+INFO :
+INFO :      [ROUND 6]
+INFO :      configure_fit: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_fit: received 10 results and 0 failures
+
+📦 [ROUND 6/20] ===> Received updates from 10 clients.
+   ∟ ===> Client 1 sent: 15.51 KB
+   ∟ ===> Client 2 sent: 15.51 KB
+   ∟ ===> Client 3 sent: 15.51 KB
+   ∟ ===> Client 4 sent: 15.51 KB
+   ∟ ===> Client 5 sent: 15.51 KB
+   ∟ ===> Client 6 sent: 15.51 KB
+   ∟ ===> Client 7 sent: 15.51 KB
+   ∟ ===> Client 8 sent: 15.51 KB
+   ∟ ===> Client 9 sent: 15.51 KB
+   ∟ ===> Client 10 sent: 15.51 KB
+   ∟ Upstream Traffic in Round 6: 0.1515 MB i.e. 155.12 KB
+INFO :      configure_evaluate: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_evaluate: received 10 results and 0 failures
+===> Client Report -> Accuracy: 0.8778 | Samples: 90
+===> Client Report -> Accuracy: 0.4674 | Samples: 92
+===> Client Report -> Accuracy: 0.8444 | Samples: 45
+===> Client Report -> Accuracy: 0.7368 | Samples: 38
+===> Client Report -> Accuracy: 0.5232 | Samples: 151
+===> Client Report -> Accuracy: 0.7368 | Samples: 95
+===> Client Report -> Accuracy: 0.9000 | Samples: 110
+===> Client Report -> Accuracy: 0.8295 | Samples: 88
+===> Client Report -> Accuracy: 0.7027 | Samples: 74
+===> Client Report -> Accuracy: 0.7500 | Samples: 72
+📢 [Round 6] ===> Global Accuracy: 0.7193
+INFO :
+INFO :      [ROUND 7]
+INFO :      configure_fit: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_fit: received 10 results and 0 failures
+
+📦 [ROUND 7/20] ===> Received updates from 10 clients.
+   ∟ ===> Client 1 sent: 15.51 KB
+   ∟ ===> Client 2 sent: 15.51 KB
+   ∟ ===> Client 3 sent: 15.51 KB
+   ∟ ===> Client 4 sent: 15.51 KB
+   ∟ ===> Client 5 sent: 15.51 KB
+   ∟ ===> Client 6 sent: 15.51 KB
+   ∟ ===> Client 7 sent: 15.51 KB
+   ∟ ===> Client 8 sent: 15.51 KB
+   ∟ ===> Client 9 sent: 15.51 KB
+   ∟ ===> Client 10 sent: 15.51 KB
+   ∟ Upstream Traffic in Round 7: 0.1515 MB i.e. 155.12 KB
+INFO :      configure_evaluate: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_evaluate: received 10 results and 0 failures
+===> Client Report -> Accuracy: 0.8889 | Samples: 90
+===> Client Report -> Accuracy: 0.8158 | Samples: 38
+===> Client Report -> Accuracy: 0.8636 | Samples: 88
+===> Client Report -> Accuracy: 0.7684 | Samples: 95
+===> Client Report -> Accuracy: 0.5326 | Samples: 92
+===> Client Report -> Accuracy: 0.7083 | Samples: 72
+===> Client Report -> Accuracy: 0.5298 | Samples: 151
+===> Client Report -> Accuracy: 0.9333 | Samples: 45
+===> Client Report -> Accuracy: 0.9000 | Samples: 110
+===> Client Report -> Accuracy: 0.6892 | Samples: 74
+📢 [Round 7] ===> Global Accuracy: 0.7392
+INFO :
+INFO :      [ROUND 8]
+INFO :      configure_fit: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_fit: received 10 results and 0 failures
+
+📦 [ROUND 8/20] ===> Received updates from 10 clients.
+   ∟ ===> Client 1 sent: 15.51 KB
+   ∟ ===> Client 2 sent: 15.51 KB
+   ∟ ===> Client 3 sent: 15.51 KB
+   ∟ ===> Client 4 sent: 15.51 KB
+   ∟ ===> Client 5 sent: 15.51 KB
+   ∟ ===> Client 6 sent: 15.51 KB
+   ∟ ===> Client 7 sent: 15.51 KB
+   ∟ ===> Client 8 sent: 15.51 KB
+   ∟ ===> Client 9 sent: 15.51 KB
+   ∟ ===> Client 10 sent: 15.51 KB
+   ∟ Upstream Traffic in Round 8: 0.1515 MB i.e. 155.12 KB
+INFO :      configure_evaluate: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_evaluate: received 10 results and 0 failures
+===> Client Report -> Accuracy: 0.8444 | Samples: 45
+===> Client Report -> Accuracy: 0.7632 | Samples: 38
+===> Client Report -> Accuracy: 0.6026 | Samples: 151
+===> Client Report -> Accuracy: 0.9091 | Samples: 88
+===> Client Report -> Accuracy: 0.5326 | Samples: 92
+===> Client Report -> Accuracy: 0.9455 | Samples: 110
+===> Client Report -> Accuracy: 0.9111 | Samples: 90
+===> Client Report -> Accuracy: 0.7297 | Samples: 74
+===> Client Report -> Accuracy: 0.8105 | Samples: 95
+===> Client Report -> Accuracy: 0.7639 | Samples: 72
+📢 [Round 8] ===> Global Accuracy: 0.7708
+INFO :
+INFO :      [ROUND 9]
+INFO :      configure_fit: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_fit: received 10 results and 0 failures
+
+📦 [ROUND 9/20] ===> Received updates from 10 clients.
+   ∟ ===> Client 1 sent: 15.51 KB
+   ∟ ===> Client 2 sent: 15.51 KB
+   ∟ ===> Client 3 sent: 15.51 KB
+   ∟ ===> Client 4 sent: 15.51 KB
+   ∟ ===> Client 5 sent: 15.51 KB
+   ∟ ===> Client 6 sent: 15.51 KB
+   ∟ ===> Client 7 sent: 15.51 KB
+   ∟ ===> Client 8 sent: 15.51 KB
+   ∟ ===> Client 9 sent: 15.51 KB
+   ∟ ===> Client 10 sent: 15.51 KB
+   ∟ Upstream Traffic in Round 9: 0.1515 MB i.e. 155.12 KB
+INFO :      configure_evaluate: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_evaluate: received 10 results and 0 failures
+===> Client Report -> Accuracy: 0.9318 | Samples: 88
+===> Client Report -> Accuracy: 0.6623 | Samples: 151
+===> Client Report -> Accuracy: 0.5652 | Samples: 92
+===> Client Report -> Accuracy: 0.9111 | Samples: 45
+===> Client Report -> Accuracy: 0.8737 | Samples: 95
+===> Client Report -> Accuracy: 0.9182 | Samples: 110
+===> Client Report -> Accuracy: 0.8472 | Samples: 72
+===> Client Report -> Accuracy: 0.8421 | Samples: 38
+===> Client Report -> Accuracy: 0.9222 | Samples: 90
+===> Client Report -> Accuracy: 0.7162 | Samples: 74
+📢 [Round 9] ===> Global Accuracy: 0.8047
+INFO :
+INFO :      [ROUND 10]
+INFO :      configure_fit: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_fit: received 10 results and 0 failures
+
+📦 [ROUND 10/20] ===> Received updates from 10 clients.
+   ∟ ===> Client 1 sent: 15.51 KB
+   ∟ ===> Client 2 sent: 15.51 KB
+   ∟ ===> Client 3 sent: 15.51 KB
+   ∟ ===> Client 4 sent: 15.51 KB
+   ∟ ===> Client 5 sent: 15.51 KB
+   ∟ ===> Client 6 sent: 15.51 KB
+   ∟ ===> Client 7 sent: 15.51 KB
+   ∟ ===> Client 8 sent: 15.51 KB
+   ∟ ===> Client 9 sent: 15.51 KB
+   ∟ ===> Client 10 sent: 15.51 KB
+   ∟ Upstream Traffic in Round 10: 0.1515 MB i.e. 155.12 KB
+INFO :      configure_evaluate: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_evaluate: received 10 results and 0 failures
+===> Client Report -> Accuracy: 0.9091 | Samples: 110
+===> Client Report -> Accuracy: 0.8526 | Samples: 95
+===> Client Report -> Accuracy: 0.7639 | Samples: 72
+===> Client Report -> Accuracy: 0.6630 | Samples: 92
+===> Client Report -> Accuracy: 0.7973 | Samples: 74
+===> Client Report -> Accuracy: 0.8750 | Samples: 88
+===> Client Report -> Accuracy: 0.9556 | Samples: 45
+===> Client Report -> Accuracy: 0.9556 | Samples: 90
+===> Client Report -> Accuracy: 0.8158 | Samples: 38
+===> Client Report -> Accuracy: 0.7219 | Samples: 151
+📢 [Round 10] ===> Global Accuracy: 0.8211
+INFO :
+INFO :      [ROUND 11]
+INFO :      configure_fit: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_fit: received 10 results and 0 failures
+
+📦 [ROUND 11/20] ===> Received updates from 10 clients.
+   ∟ ===> Client 1 sent: 15.51 KB
+   ∟ ===> Client 2 sent: 15.51 KB
+   ∟ ===> Client 3 sent: 15.51 KB
+   ∟ ===> Client 4 sent: 15.51 KB
+   ∟ ===> Client 5 sent: 15.51 KB
+   ∟ ===> Client 6 sent: 15.51 KB
+   ∟ ===> Client 7 sent: 15.51 KB
+   ∟ ===> Client 8 sent: 15.51 KB
+   ∟ ===> Client 9 sent: 15.51 KB
+   ∟ ===> Client 10 sent: 15.51 KB
+   ∟ Upstream Traffic in Round 11: 0.1515 MB i.e. 155.12 KB
+INFO :      configure_evaluate: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_evaluate: received 10 results and 0 failures
+===> Client Report -> Accuracy: 0.7500 | Samples: 92
+===> Client Report -> Accuracy: 0.7020 | Samples: 151
+===> Client Report -> Accuracy: 0.7297 | Samples: 74
+===> Client Report -> Accuracy: 0.8750 | Samples: 72
+===> Client Report -> Accuracy: 0.9778 | Samples: 45
+===> Client Report -> Accuracy: 0.9556 | Samples: 90
+===> Client Report -> Accuracy: 0.9659 | Samples: 88
+===> Client Report -> Accuracy: 0.9364 | Samples: 110
+===> Client Report -> Accuracy: 0.9053 | Samples: 95
+===> Client Report -> Accuracy: 0.9211 | Samples: 38
+📢 [Round 11] ===> Global Accuracy: 0.8550
+INFO :
+INFO :      [ROUND 12]
+INFO :      configure_fit: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_fit: received 10 results and 0 failures
+
+📦 [ROUND 12/20] ===> Received updates from 10 clients.
+   ∟ ===> Client 1 sent: 15.51 KB
+   ∟ ===> Client 2 sent: 15.51 KB
+   ∟ ===> Client 3 sent: 15.51 KB
+   ∟ ===> Client 4 sent: 15.51 KB
+   ∟ ===> Client 5 sent: 15.51 KB
+   ∟ ===> Client 6 sent: 15.51 KB
+   ∟ ===> Client 7 sent: 15.51 KB
+   ∟ ===> Client 8 sent: 15.51 KB
+   ∟ ===> Client 9 sent: 15.51 KB
+   ∟ ===> Client 10 sent: 15.51 KB
+   ∟ Upstream Traffic in Round 12: 0.1515 MB i.e. 155.12 KB
+INFO :      configure_evaluate: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_evaluate: received 10 results and 0 failures
+===> Client Report -> Accuracy: 0.8108 | Samples: 74
+===> Client Report -> Accuracy: 0.8056 | Samples: 72
+===> Client Report -> Accuracy: 0.9333 | Samples: 90
+===> Client Report -> Accuracy: 0.8842 | Samples: 95
+===> Client Report -> Accuracy: 0.8421 | Samples: 38
+===> Client Report -> Accuracy: 0.9432 | Samples: 88
+===> Client Report -> Accuracy: 0.7351 | Samples: 151
+===> Client Report -> Accuracy: 0.9273 | Samples: 110
+===> Client Report -> Accuracy: 0.7174 | Samples: 92
+===> Client Report -> Accuracy: 0.9556 | Samples: 45
+📢 [Round 12] ===> Global Accuracy: 0.8456
+INFO :
+INFO :      [ROUND 13]
+INFO :      configure_fit: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_fit: received 10 results and 0 failures
+
+📦 [ROUND 13/20] ===> Received updates from 10 clients.
+   ∟ ===> Client 1 sent: 15.51 KB
+   ∟ ===> Client 2 sent: 15.51 KB
+   ∟ ===> Client 3 sent: 15.51 KB
+   ∟ ===> Client 4 sent: 15.51 KB
+   ∟ ===> Client 5 sent: 15.51 KB
+   ∟ ===> Client 6 sent: 15.51 KB
+   ∟ ===> Client 7 sent: 15.51 KB
+   ∟ ===> Client 8 sent: 15.51 KB
+   ∟ ===> Client 9 sent: 15.51 KB
+   ∟ ===> Client 10 sent: 15.51 KB
+   ∟ Upstream Traffic in Round 13: 0.1515 MB i.e. 155.12 KB
+INFO :      configure_evaluate: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_evaluate: received 10 results and 0 failures
+===> Client Report -> Accuracy: 0.8919 | Samples: 74
+===> Client Report -> Accuracy: 0.9737 | Samples: 38
+===> Client Report -> Accuracy: 0.9778 | Samples: 90
+===> Client Report -> Accuracy: 0.9818 | Samples: 110
+===> Client Report -> Accuracy: 0.8889 | Samples: 72
+===> Client Report -> Accuracy: 0.9053 | Samples: 95
+===> Client Report -> Accuracy: 0.8344 | Samples: 151
+===> Client Report -> Accuracy: 0.9333 | Samples: 45
+===> Client Report -> Accuracy: 0.9091 | Samples: 88
+===> Client Report -> Accuracy: 0.7826 | Samples: 92
+📢 [Round 13] ===> Global Accuracy: 0.8994
+INFO :
+INFO :      [ROUND 14]
+INFO :      configure_fit: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_fit: received 10 results and 0 failures
+
+📦 [ROUND 14/20] ===> Received updates from 10 clients.
+   ∟ ===> Client 1 sent: 15.51 KB
+   ∟ ===> Client 2 sent: 15.51 KB
+   ∟ ===> Client 3 sent: 15.51 KB
+   ∟ ===> Client 4 sent: 15.51 KB
+   ∟ ===> Client 5 sent: 15.51 KB
+   ∟ ===> Client 6 sent: 15.51 KB
+   ∟ ===> Client 7 sent: 15.51 KB
+   ∟ ===> Client 8 sent: 15.51 KB
+   ∟ ===> Client 9 sent: 15.51 KB
+   ∟ ===> Client 10 sent: 15.51 KB
+   ∟ Upstream Traffic in Round 14: 0.1515 MB i.e. 155.12 KB
+INFO :      configure_evaluate: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_evaluate: received 10 results and 0 failures
+===> Client Report -> Accuracy: 0.9053 | Samples: 95
+===> Client Report -> Accuracy: 1.0000 | Samples: 45
+===> Client Report -> Accuracy: 0.7826 | Samples: 92
+===> Client Report -> Accuracy: 0.9667 | Samples: 90
+===> Client Report -> Accuracy: 0.7815 | Samples: 151
+===> Client Report -> Accuracy: 0.8889 | Samples: 72
+===> Client Report -> Accuracy: 0.8378 | Samples: 74
+===> Client Report -> Accuracy: 0.8947 | Samples: 38
+===> Client Report -> Accuracy: 0.9659 | Samples: 88
+===> Client Report -> Accuracy: 0.9636 | Samples: 110
+📢 [Round 14] ===> Global Accuracy: 0.8877
+INFO :
+INFO :      [ROUND 15]
+INFO :      configure_fit: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_fit: received 10 results and 0 failures
+
+📦 [ROUND 15/20] ===> Received updates from 10 clients.
+   ∟ ===> Client 1 sent: 15.51 KB
+   ∟ ===> Client 2 sent: 15.51 KB
+   ∟ ===> Client 3 sent: 15.51 KB
+   ∟ ===> Client 4 sent: 15.51 KB
+   ∟ ===> Client 5 sent: 15.51 KB
+   ∟ ===> Client 6 sent: 15.51 KB
+   ∟ ===> Client 7 sent: 15.51 KB
+   ∟ ===> Client 8 sent: 15.51 KB
+   ∟ ===> Client 9 sent: 15.51 KB
+   ∟ ===> Client 10 sent: 15.51 KB
+   ∟ Upstream Traffic in Round 15: 0.1515 MB i.e. 155.12 KB
+INFO :      configure_evaluate: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_evaluate: received 10 results and 0 failures
+===> Client Report -> Accuracy: 0.9459 | Samples: 74
+===> Client Report -> Accuracy: 0.9368 | Samples: 95
+===> Client Report -> Accuracy: 0.9167 | Samples: 72
+===> Client Report -> Accuracy: 0.9211 | Samples: 38
+===> Client Report -> Accuracy: 0.9818 | Samples: 110
+===> Client Report -> Accuracy: 0.8609 | Samples: 151
+===> Client Report -> Accuracy: 0.9444 | Samples: 90
+===> Client Report -> Accuracy: 1.0000 | Samples: 45
+===> Client Report -> Accuracy: 0.9659 | Samples: 88
+===> Client Report -> Accuracy: 0.8478 | Samples: 92
+📢 [Round 15] ===> Global Accuracy: 0.9251
+INFO :
+INFO :      [ROUND 16]
+INFO :      configure_fit: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_fit: received 10 results and 0 failures
+
+📦 [ROUND 16/20] ===> Received updates from 10 clients.
+   ∟ ===> Client 1 sent: 15.51 KB
+   ∟ ===> Client 2 sent: 15.51 KB
+   ∟ ===> Client 3 sent: 15.51 KB
+   ∟ ===> Client 4 sent: 15.51 KB
+   ∟ ===> Client 5 sent: 15.51 KB
+   ∟ ===> Client 6 sent: 15.51 KB
+   ∟ ===> Client 7 sent: 15.51 KB
+   ∟ ===> Client 8 sent: 15.51 KB
+   ∟ ===> Client 9 sent: 15.51 KB
+   ∟ ===> Client 10 sent: 15.51 KB
+   ∟ Upstream Traffic in Round 16: 0.1515 MB i.e. 155.12 KB
+INFO :      configure_evaluate: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_evaluate: received 10 results and 0 failures
+===> Client Report -> Accuracy: 0.9028 | Samples: 72
+===> Client Report -> Accuracy: 0.9818 | Samples: 110
+===> Client Report -> Accuracy: 0.9778 | Samples: 90
+===> Client Report -> Accuracy: 0.9773 | Samples: 88
+===> Client Report -> Accuracy: 0.9189 | Samples: 74
+===> Client Report -> Accuracy: 0.9778 | Samples: 45
+===> Client Report -> Accuracy: 0.8344 | Samples: 151
+===> Client Report -> Accuracy: 0.9579 | Samples: 95
+===> Client Report -> Accuracy: 0.9022 | Samples: 92
+===> Client Report -> Accuracy: 0.8684 | Samples: 38
+📢 [Round 16] ===> Global Accuracy: 0.9263
+INFO :
+INFO :      [ROUND 17]
+INFO :      configure_fit: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_fit: received 10 results and 0 failures
+
+📦 [ROUND 17/20] ===> Received updates from 10 clients.
+   ∟ ===> Client 1 sent: 15.51 KB
+   ∟ ===> Client 2 sent: 15.51 KB
+   ∟ ===> Client 3 sent: 15.51 KB
+   ∟ ===> Client 4 sent: 15.51 KB
+   ∟ ===> Client 5 sent: 15.51 KB
+   ∟ ===> Client 6 sent: 15.51 KB
+   ∟ ===> Client 7 sent: 15.51 KB
+   ∟ ===> Client 8 sent: 15.51 KB
+   ∟ ===> Client 9 sent: 15.51 KB
+   ∟ ===> Client 10 sent: 15.51 KB
+   ∟ Upstream Traffic in Round 17: 0.1515 MB i.e. 155.12 KB
+INFO :      configure_evaluate: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_evaluate: received 10 results and 0 failures
+===> Client Report -> Accuracy: 0.9459 | Samples: 74
+===> Client Report -> Accuracy: 0.9778 | Samples: 45
+===> Client Report -> Accuracy: 0.9545 | Samples: 88
+===> Client Report -> Accuracy: 0.9727 | Samples: 110
+===> Client Report -> Accuracy: 0.8675 | Samples: 151
+===> Client Report -> Accuracy: 0.9306 | Samples: 72
+===> Client Report -> Accuracy: 0.9474 | Samples: 95
+===> Client Report -> Accuracy: 0.8261 | Samples: 92
+===> Client Report -> Accuracy: 0.9667 | Samples: 90
+===> Client Report -> Accuracy: 0.8684 | Samples: 38
+📢 [Round 17] ===> Global Accuracy: 0.9228
+INFO :
+INFO :      [ROUND 18]
+INFO :      configure_fit: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_fit: received 10 results and 0 failures
+
+📦 [ROUND 18/20] ===> Received updates from 10 clients.
+   ∟ ===> Client 1 sent: 15.51 KB
+   ∟ ===> Client 2 sent: 15.51 KB
+   ∟ ===> Client 3 sent: 15.51 KB
+   ∟ ===> Client 4 sent: 15.51 KB
+   ∟ ===> Client 5 sent: 15.51 KB
+   ∟ ===> Client 6 sent: 15.51 KB
+   ∟ ===> Client 7 sent: 15.51 KB
+   ∟ ===> Client 8 sent: 15.51 KB
+   ∟ ===> Client 9 sent: 15.51 KB
+   ∟ ===> Client 10 sent: 15.51 KB
+   ∟ Upstream Traffic in Round 18: 0.1515 MB i.e. 155.12 KB
+INFO :      configure_evaluate: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_evaluate: received 10 results and 0 failures
+===> Client Report -> Accuracy: 1.0000 | Samples: 45
+===> Client Report -> Accuracy: 0.9773 | Samples: 88
+===> Client Report -> Accuracy: 1.0000 | Samples: 38
+===> Client Report -> Accuracy: 0.9189 | Samples: 74
+===> Client Report -> Accuracy: 0.9861 | Samples: 72
+===> Client Report -> Accuracy: 0.9636 | Samples: 110
+===> Client Report -> Accuracy: 0.9579 | Samples: 95
+===> Client Report -> Accuracy: 0.9239 | Samples: 92
+===> Client Report -> Accuracy: 0.9778 | Samples: 90
+===> Client Report -> Accuracy: 0.9073 | Samples: 151
+📢 [Round 18] ===> Global Accuracy: 0.9532
+INFO :
+INFO :      [ROUND 19]
+INFO :      configure_fit: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_fit: received 10 results and 0 failures
+
+📦 [ROUND 19/20] ===> Received updates from 10 clients.
+   ∟ ===> Client 1 sent: 15.51 KB
+   ∟ ===> Client 2 sent: 15.51 KB
+   ∟ ===> Client 3 sent: 15.51 KB
+   ∟ ===> Client 4 sent: 15.51 KB
+   ∟ ===> Client 5 sent: 15.51 KB
+   ∟ ===> Client 6 sent: 15.51 KB
+   ∟ ===> Client 7 sent: 15.51 KB
+   ∟ ===> Client 8 sent: 15.51 KB
+   ∟ ===> Client 9 sent: 15.51 KB
+   ∟ ===> Client 10 sent: 15.51 KB
+   ∟ Upstream Traffic in Round 19: 0.1515 MB i.e. 155.12 KB
+INFO :      configure_evaluate: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_evaluate: received 10 results and 0 failures
+===> Client Report -> Accuracy: 0.8940 | Samples: 151
+===> Client Report -> Accuracy: 0.9909 | Samples: 110
+===> Client Report -> Accuracy: 0.8696 | Samples: 92
+===> Client Report -> Accuracy: 0.9737 | Samples: 38
+===> Client Report -> Accuracy: 0.9773 | Samples: 88
+===> Client Report -> Accuracy: 0.9556 | Samples: 90
+===> Client Report -> Accuracy: 0.9583 | Samples: 72
+===> Client Report -> Accuracy: 0.9778 | Samples: 45
+===> Client Report -> Accuracy: 0.9324 | Samples: 74
+===> Client Report -> Accuracy: 0.9789 | Samples: 95
+📢 [Round 19] ===> Global Accuracy: 0.9450
+INFO :
+INFO :      [ROUND 20]
+INFO :      configure_fit: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_fit: received 10 results and 0 failures
+
+📦 [ROUND 20/20] ===> Received updates from 10 clients.
+   ∟ ===> Client 1 sent: 15.51 KB
+   ∟ ===> Client 2 sent: 15.51 KB
+   ∟ ===> Client 3 sent: 15.51 KB
+   ∟ ===> Client 4 sent: 15.51 KB
+   ∟ ===> Client 5 sent: 15.51 KB
+   ∟ ===> Client 6 sent: 15.51 KB
+   ∟ ===> Client 7 sent: 15.51 KB
+   ∟ ===> Client 8 sent: 15.51 KB
+   ∟ ===> Client 9 sent: 15.51 KB
+   ∟ ===> Client 10 sent: 15.51 KB
+   ∟ Upstream Traffic in Round 20: 0.1515 MB i.e. 155.12 KB
+
+📝 [FINAL ROUND 20] Saving final model weights to ./output/best_model.pth...
+📝 Saving model at ./output/best_model.pth
+
+============================================================
+📊 FINAL TELEMETRY SUMMARY FOR PAPER SECTION 5
+============================================================
+  ∟ Total Communication Rounds (z) : 20
+  ∟ Active Edge Clients (N)        : 0
+  ∟ Total Upstream Payload        : 3.0296 MB
+  ∟ Est. Total Bandwidth (Up+Down): 6.0593 MB
+  ∟ Total Execution Time          : 408.41 seconds (6.81 mins)
+============================================================
+
+INFO :      configure_evaluate: strategy sampled 10 clients (out of 10)
+INFO :      aggregate_evaluate: received 10 results and 0 failures
+===> Client Report -> Accuracy: 0.9556 | Samples: 90
+===> Client Report -> Accuracy: 0.9603 | Samples: 151
+===> Client Report -> Accuracy: 0.9730 | Samples: 74
+===> Client Report -> Accuracy: 0.9818 | Samples: 110
+===> Client Report -> Accuracy: 0.9783 | Samples: 92
+===> Client Report -> Accuracy: 0.9737 | Samples: 38
+===> Client Report -> Accuracy: 0.9773 | Samples: 88
+===> Client Report -> Accuracy: 0.9789 | Samples: 95
+===> Client Report -> Accuracy: 1.0000 | Samples: 45
+===> Client Report -> Accuracy: 1.0000 | Samples: 72
+📢 [Round 20] ===> Global Accuracy: 0.9754
+INFO :
+INFO :      [SUMMARY]
+INFO :      Run finished 20 round(s) in 436.94s
+INFO :          History (loss, distributed):
+INFO :                  round 1: 1.0571647335074799
+INFO :                  round 2: 0.9909214671545792
+INFO :                  round 3: 0.9306449469743882
+INFO :                  round 4: 0.8337829266491457
+INFO :                  round 5: 0.7397318162718246
+INFO :                  round 6: 0.6695964064282051
+INFO :                  round 7: 0.5951813295704347
+INFO :                  round 8: 0.4838552017570936
+INFO :                  round 9: 0.44724208280647476
+INFO :                  round 10: 0.42824858511749064
+INFO :                  round 11: 0.34832013961254504
+INFO :                  round 12: 0.32921734576249684
+INFO :                  round 13: 0.2549857194500941
+INFO :                  round 14: 0.27345272455938147
+INFO :                  round 15: 0.22776512682321706
+INFO :                  round 16: 0.19009968725546875
+INFO :                  round 17: 0.1904606932609344
+INFO :                  round 18: 0.15716182828788258
+INFO :                  round 19: 0.15446263886581504
+INFO :                  round 20: 0.11961807693218628
+INFO :          History (metrics, distributed, evaluate):
+INFO :          {'accuracy': [(1, 0.4619883040935672),
+INFO :                        (2, 0.5134502923976608),
+INFO :                        (3, 0.5391812865497077),
+INFO :                        (4, 0.5859649122807018),
+INFO :                        (5, 0.6502923976608187),
+INFO :                        (6, 0.7192982456140351),
+INFO :                        (7, 0.7391812865497076),
+INFO :                        (8, 0.7707602339181286),
+INFO :                        (9, 0.8046783625730994),
+INFO :                        (10, 0.8210526315789474),
+INFO :                        (11, 0.8549707602339182),
+INFO :                        (12, 0.8456140350877193),
+INFO :                        (13, 0.8994152046783626),
+INFO :                        (14, 0.887719298245614),
+INFO :                        (15, 0.9251461988304094),
+INFO :                        (16, 0.9263157894736842),
+INFO :                        (17, 0.9228070175438596),
+INFO :                        (18, 0.9532163742690059),
+INFO :                        (19, 0.9450292397660819),
+INFO :                        (20, 0.9754385964912281)]}
+INFO :
+INFO :

@@ -1,0 +1,769 @@
+[92mINFO [0m:      Starting Flower SuperNode
+[93mWARNING [0m:   Option `--insecure` was set. Starting insecure HTTP channel to 127.0.0.1:9092.
+[92mINFO [0m:      Flower Deployment Runtime: Starting ClientAppIo API on 127.0.0.1:9102
+[92mINFO [0m:      SuperNode ID: 17571580610709961972
+[92mINFO [0m:      Starting Flower SuperExec
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 1]
+[92mINFO [0m:      Receiving: train message (ID: 4138728bd2cc739045b3f7fca105917735a5e54973520a66302702703b34d0af)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 1]
+[92mINFO [0m:      Sending: train message (ID: 07bcaaef5fc6d9c72bbbeea9669ac3faedda907142de59be88967e38c8f2cd21)
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+🏃 ===> Training started on 368 local samples.
+Epoch 1/10 - ===> LOCAL-TRAINING Accuracy: 0.7038
+Epoch 2/10 - ===> LOCAL-TRAINING Accuracy: 0.8125
+Epoch 3/10 - ===> LOCAL-TRAINING Accuracy: 0.8125
+Epoch 4/10 - ===> LOCAL-TRAINING Accuracy: 0.8125
+Epoch 5/10 - ===> LOCAL-TRAINING Accuracy: 0.8125
+Epoch 6/10 - ===> LOCAL-TRAINING Accuracy: 0.8125
+Epoch 7/10 - ===> LOCAL-TRAINING Accuracy: 0.8125
+Epoch 8/10 - ===> LOCAL-TRAINING Accuracy: 0.8125
+Epoch 9/10 - ===> LOCAL-TRAINING Accuracy: 0.8125
+Epoch 10/10 - ===> LOCAL-TRAINING Accuracy: 0.8125
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 1]
+[92mINFO [0m:      Receiving: evaluate message (ID: 8c70e0bb21f098150f7e4aeedf5aa739846712a4b71b4fe0d9d8a2db03911fd3)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 1]
+[92mINFO [0m:      Sending: evaluate message (ID: b6d8502ffdd0a370e4e496168c36613cd8dc567a3076b3bad4ebae9f81a11a98)
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+===> LOCAL-EVALUATE Accuracy: 0.1739
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 2]
+[92mINFO [0m:      Receiving: train message (ID: 6df8a6c2806ec2cebd885f4490896685d5d7152b33b39cd2d32c447f000c5bd5)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 2]
+[92mINFO [0m:      Sending: train message (ID: 5dbfcfab43d8448106805c720ecb67d73ca1b991fcf9bd31648363e130eee99c)
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+🏃 ===> Training started on 368 local samples.
+Epoch 1/10 - ===> LOCAL-TRAINING Accuracy: 0.5679
+Epoch 2/10 - ===> LOCAL-TRAINING Accuracy: 0.8016
+Epoch 3/10 - ===> LOCAL-TRAINING Accuracy: 0.8016
+Epoch 4/10 - ===> LOCAL-TRAINING Accuracy: 0.8016
+Epoch 5/10 - ===> LOCAL-TRAINING Accuracy: 0.8016
+Epoch 6/10 - ===> LOCAL-TRAINING Accuracy: 0.8016
+Epoch 7/10 - ===> LOCAL-TRAINING Accuracy: 0.8016
+Epoch 8/10 - ===> LOCAL-TRAINING Accuracy: 0.8016
+Epoch 9/10 - ===> LOCAL-TRAINING Accuracy: 0.8016
+Epoch 10/10 - ===> LOCAL-TRAINING Accuracy: 0.8016
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 2]
+[92mINFO [0m:      Receiving: evaluate message (ID: cff5a0ac20d21305f9d26bd4f08a2ae9b02be4a3dde7a6399faf88bcad5d0564)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 2]
+[92mINFO [0m:      Sending: evaluate message (ID: 7dc36b7e34b2a15c0e7fc1392b45c27c5be9e4fbc1752ec517c108fc9773b2d9)
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+===> LOCAL-EVALUATE Accuracy: 0.2391
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 3]
+[92mINFO [0m:      Receiving: train message (ID: 5230f45282651e656c659c4e417a42049c85f038002f186f583f796f1f37afd4)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 3]
+[92mINFO [0m:      Sending: train message (ID: 56c1520966a0e01a628e8e64240464798c24d6d2c2cbb472fc9cd7e5ad028919)
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+🏃 ===> Training started on 368 local samples.
+Epoch 1/10 - ===> LOCAL-TRAINING Accuracy: 0.5652
+Epoch 2/10 - ===> LOCAL-TRAINING Accuracy: 0.8179
+Epoch 3/10 - ===> LOCAL-TRAINING Accuracy: 0.8179
+Epoch 4/10 - ===> LOCAL-TRAINING Accuracy: 0.8179
+Epoch 5/10 - ===> LOCAL-TRAINING Accuracy: 0.8179
+Epoch 6/10 - ===> LOCAL-TRAINING Accuracy: 0.8179
+Epoch 7/10 - ===> LOCAL-TRAINING Accuracy: 0.8179
+Epoch 8/10 - ===> LOCAL-TRAINING Accuracy: 0.8179
+Epoch 9/10 - ===> LOCAL-TRAINING Accuracy: 0.8179
+Epoch 10/10 - ===> LOCAL-TRAINING Accuracy: 0.8288
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 3]
+[92mINFO [0m:      Receiving: evaluate message (ID: 81372c6e362ad13c738e877026d8ea3177db442ab0df56167cd8f9dbed1be19c)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 3]
+[92mINFO [0m:      Sending: evaluate message (ID: 5782718bf5c5438cb85d220fe29a8680df1f49acea5e52b27f861008f611e6c4)
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+===> LOCAL-EVALUATE Accuracy: 0.1630
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 4]
+[92mINFO [0m:      Receiving: train message (ID: d4a1025c4d5133480d0aa3cbe8de32504e6770fa14d36e1a63f527ec1f2eb73f)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 4]
+[92mINFO [0m:      Sending: train message (ID: 3d0659b2b73fa96f56ef960d05d31f3d52b69ee5b99d13fc371a96989e274dc2)
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+🏃 ===> Training started on 368 local samples.
+Epoch 1/10 - ===> LOCAL-TRAINING Accuracy: 0.5489
+Epoch 2/10 - ===> LOCAL-TRAINING Accuracy: 0.8098
+Epoch 3/10 - ===> LOCAL-TRAINING Accuracy: 0.8071
+Epoch 4/10 - ===> LOCAL-TRAINING Accuracy: 0.8071
+Epoch 5/10 - ===> LOCAL-TRAINING Accuracy: 0.8125
+Epoch 6/10 - ===> LOCAL-TRAINING Accuracy: 0.8234
+Epoch 7/10 - ===> LOCAL-TRAINING Accuracy: 0.8288
+Epoch 8/10 - ===> LOCAL-TRAINING Accuracy: 0.8342
+Epoch 9/10 - ===> LOCAL-TRAINING Accuracy: 0.8424
+Epoch 10/10 - ===> LOCAL-TRAINING Accuracy: 0.8560
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 4]
+[92mINFO [0m:      Receiving: evaluate message (ID: 6347981ce5d4c6caa428291dcf289705d8a05eab35b4f03adeb840d4fdec9dcf)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 4]
+[92mINFO [0m:      Sending: evaluate message (ID: 1ec8d11138034c7d1ef3e7cccec9589b23a16e54c26175ce1a96f25aff23f12f)
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+===> LOCAL-EVALUATE Accuracy: 0.2609
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 5]
+[92mINFO [0m:      Receiving: train message (ID: 551c756806773a67e068d10ee8ce35fb7df9821c833b8eaca9acb3e4cd9c01c6)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 5]
+[92mINFO [0m:      Sending: train message (ID: c4266bb4f86fbf372fe9d8a1a81c0413fad03e2b51dd6a60a0fa639ab60d0e5a)
+[92mINFO [0m:      
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+🏃 ===> Training started on 368 local samples.
+Epoch 1/10 - ===> LOCAL-TRAINING Accuracy: 0.6495
+Epoch 2/10 - ===> LOCAL-TRAINING Accuracy: 0.8370
+Epoch 3/10 - ===> LOCAL-TRAINING Accuracy: 0.8315
+Epoch 4/10 - ===> LOCAL-TRAINING Accuracy: 0.8370
+Epoch 5/10 - ===> LOCAL-TRAINING Accuracy: 0.8614
+Epoch 6/10 - ===> LOCAL-TRAINING Accuracy: 0.8641
+Epoch 7/10 - ===> LOCAL-TRAINING Accuracy: 0.8696
+Epoch 8/10 - ===> LOCAL-TRAINING Accuracy: 0.8696
+Epoch 9/10 - ===> LOCAL-TRAINING Accuracy: 0.8750
+Epoch 10/10 - ===> LOCAL-TRAINING Accuracy: 0.8859
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 5]
+[92mINFO [0m:      Receiving: evaluate message (ID: 33eb7b1349e7ca68a50d7043a0076dd911403e2100a6187d109f85490335ae47)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 5]
+[92mINFO [0m:      Sending: evaluate message (ID: b774cc6330131f1dd6101dc9900ab356ae24dd41aea3aefcf314bf8163ae1bfa)
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+===> LOCAL-EVALUATE Accuracy: 0.4239
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 6]
+[92mINFO [0m:      Receiving: train message (ID: a66011cad87b381bae7a6a78e421300396184540e36b19dde09f018dd3a87460)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 6]
+[92mINFO [0m:      Sending: train message (ID: 42a7060fb0b144f19212dd29d0c8b90d78278eafd03a05d91aa3a8d57a97af38)
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+🏃 ===> Training started on 368 local samples.
+Epoch 1/10 - ===> LOCAL-TRAINING Accuracy: 0.6821
+Epoch 2/10 - ===> LOCAL-TRAINING Accuracy: 0.8342
+Epoch 3/10 - ===> LOCAL-TRAINING Accuracy: 0.8370
+Epoch 4/10 - ===> LOCAL-TRAINING Accuracy: 0.8668
+Epoch 5/10 - ===> LOCAL-TRAINING Accuracy: 0.8832
+Epoch 6/10 - ===> LOCAL-TRAINING Accuracy: 0.8832
+Epoch 7/10 - ===> LOCAL-TRAINING Accuracy: 0.8832
+Epoch 8/10 - ===> LOCAL-TRAINING Accuracy: 0.8913
+Epoch 9/10 - ===> LOCAL-TRAINING Accuracy: 0.8967
+Epoch 10/10 - ===> LOCAL-TRAINING Accuracy: 0.9076
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 6]
+[92mINFO [0m:      Receiving: evaluate message (ID: ef551123fccd3a72e1e8f6dafb51825e06666624ea60eaa5a7aca81f8d46bbe1)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 6]
+[92mINFO [0m:      Sending: evaluate message (ID: db696b1f9b19a5f43e615bbb3d9b9d7f6ae4c5cb595b566f53fc1d6f5f6839d0)
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+===> LOCAL-EVALUATE Accuracy: 0.4674
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 7]
+[92mINFO [0m:      Receiving: train message (ID: b3a293f2c01c9b247134e65754423b53ecaae3bec06be4ddbcc1311900802950)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 7]
+[92mINFO [0m:      Sending: train message (ID: 46901e11aa584eb05ebcd44782e0fe95d1827dea8ea2c67339f5707f808d23b1)
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+🏃 ===> Training started on 368 local samples.
+Epoch 1/10 - ===> LOCAL-TRAINING Accuracy: 0.7717
+Epoch 2/10 - ===> LOCAL-TRAINING Accuracy: 0.8533
+Epoch 3/10 - ===> LOCAL-TRAINING Accuracy: 0.8668
+Epoch 4/10 - ===> LOCAL-TRAINING Accuracy: 0.8967
+Epoch 5/10 - ===> LOCAL-TRAINING Accuracy: 0.9103
+Epoch 6/10 - ===> LOCAL-TRAINING Accuracy: 0.9185
+Epoch 7/10 - ===> LOCAL-TRAINING Accuracy: 0.9212
+Epoch 8/10 - ===> LOCAL-TRAINING Accuracy: 0.9266
+Epoch 9/10 - ===> LOCAL-TRAINING Accuracy: 0.9457
+Epoch 10/10 - ===> LOCAL-TRAINING Accuracy: 0.9457
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 7]
+[92mINFO [0m:      Receiving: evaluate message (ID: 0bb69d1b1cf4e0a02e31751c8e35048446f864280c8f4aa6b71ddbbb814a1721)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 7]
+[92mINFO [0m:      Sending: evaluate message (ID: 1f82fdaed2ca5e08f4357335ed3419f135d54b457d40e0967c1f2574edd8869a)
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+===> LOCAL-EVALUATE Accuracy: 0.5326
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 8]
+[92mINFO [0m:      Receiving: train message (ID: 7d7fe3b1f8044f62f897599eebd761089f5cc0e0fee093bcbd8377c0c4c91ba7)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 8]
+[92mINFO [0m:      Sending: train message (ID: e900db84aab21c05d30ae2e511738f41b671b2ef4f76272f27387730fc01c83f)
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+🏃 ===> Training started on 368 local samples.
+Epoch 1/10 - ===> LOCAL-TRAINING Accuracy: 0.8315
+Epoch 2/10 - ===> LOCAL-TRAINING Accuracy: 0.8696
+Epoch 3/10 - ===> LOCAL-TRAINING Accuracy: 0.9022
+Epoch 4/10 - ===> LOCAL-TRAINING Accuracy: 0.9321
+Epoch 5/10 - ===> LOCAL-TRAINING Accuracy: 0.9402
+Epoch 6/10 - ===> LOCAL-TRAINING Accuracy: 0.9402
+Epoch 7/10 - ===> LOCAL-TRAINING Accuracy: 0.9429
+Epoch 8/10 - ===> LOCAL-TRAINING Accuracy: 0.9565
+Epoch 9/10 - ===> LOCAL-TRAINING Accuracy: 0.9620
+Epoch 10/10 - ===> LOCAL-TRAINING Accuracy: 0.9728
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 8]
+[92mINFO [0m:      Receiving: evaluate message (ID: 4f5cd66375bcbecbe1817233a62b81885c25a1e3276f461f66c9260c25f15319)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 8]
+[92mINFO [0m:      Sending: evaluate message (ID: 1c9c9e8904dfdf4a3e108e325422652c8ba0eaf6b4f5d6d5bbf61c58de6e8274)
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+===> LOCAL-EVALUATE Accuracy: 0.5326
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 9]
+[92mINFO [0m:      Receiving: train message (ID: ce9575d85b098cab065189b57edee98b56ea649c85fcb1f63b8d8be778d4c028)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 9]
+[92mINFO [0m:      Sending: train message (ID: eb43921164be555eb85bcbde21cd56caf8fd54d32f9935e42f3e3e2d825e7d7c)
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+🏃 ===> Training started on 368 local samples.
+Epoch 1/10 - ===> LOCAL-TRAINING Accuracy: 0.8342
+Epoch 2/10 - ===> LOCAL-TRAINING Accuracy: 0.9022
+Epoch 3/10 - ===> LOCAL-TRAINING Accuracy: 0.9103
+Epoch 4/10 - ===> LOCAL-TRAINING Accuracy: 0.9484
+Epoch 5/10 - ===> LOCAL-TRAINING Accuracy: 0.9592
+Epoch 6/10 - ===> LOCAL-TRAINING Accuracy: 0.9620
+Epoch 7/10 - ===> LOCAL-TRAINING Accuracy: 0.9701
+Epoch 8/10 - ===> LOCAL-TRAINING Accuracy: 0.9810
+Epoch 9/10 - ===> LOCAL-TRAINING Accuracy: 0.9891
+Epoch 10/10 - ===> LOCAL-TRAINING Accuracy: 0.9864
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 9]
+[92mINFO [0m:      Receiving: evaluate message (ID: 4899f405a685257f4c02566b85ac8e04159e5c6d519b6ac626cefac102cb24d3)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 9]
+[92mINFO [0m:      Sending: evaluate message (ID: 845e3799c31e178decc3dde7e58058c1c0f1e971e740753a60c8cdafc1b74b98)
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+===> LOCAL-EVALUATE Accuracy: 0.5652
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 10]
+[92mINFO [0m:      Receiving: train message (ID: 8f2c5d52a79596c4a6203a4b1923aac0fd60d0802c41a9474ab09698edd57081)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 10]
+[92mINFO [0m:      Sending: train message (ID: 8105cdcc757aae17864f9bf25bc062120c867d9da0646e68e6fdd3999a8a814b)
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+🏃 ===> Training started on 368 local samples.
+Epoch 1/10 - ===> LOCAL-TRAINING Accuracy: 0.8777
+Epoch 2/10 - ===> LOCAL-TRAINING Accuracy: 0.9158
+Epoch 3/10 - ===> LOCAL-TRAINING Accuracy: 0.9348
+Epoch 4/10 - ===> LOCAL-TRAINING Accuracy: 0.9674
+Epoch 5/10 - ===> LOCAL-TRAINING Accuracy: 0.9755
+Epoch 6/10 - ===> LOCAL-TRAINING Accuracy: 0.9728
+Epoch 7/10 - ===> LOCAL-TRAINING Accuracy: 0.9810
+Epoch 8/10 - ===> LOCAL-TRAINING Accuracy: 0.9864
+Epoch 9/10 - ===> LOCAL-TRAINING Accuracy: 0.9946
+Epoch 10/10 - ===> LOCAL-TRAINING Accuracy: 0.9946
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 10]
+[92mINFO [0m:      Receiving: evaluate message (ID: c095fb85ab13424316cced945ca49c328d80655648c330bc60851585e97e7399)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 10]
+[92mINFO [0m:      Sending: evaluate message (ID: d7a23baaff67832a3efaee8b658f9b24825df07adc1cd862a7e0852231bbe8ad)
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+===> LOCAL-EVALUATE Accuracy: 0.6630
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 11]
+[92mINFO [0m:      Receiving: train message (ID: b1ba0f819bb56d55d9b28becec94ef27e124620c7614ea810945003f3bbd16d7)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 11]
+[92mINFO [0m:      Sending: train message (ID: 4b777568f42c93cd3ab7c0b0710267737854a6276e8a6713670a5c28fdb80fad)
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+🏃 ===> Training started on 368 local samples.
+Epoch 1/10 - ===> LOCAL-TRAINING Accuracy: 0.8940
+Epoch 2/10 - ===> LOCAL-TRAINING Accuracy: 0.9212
+Epoch 3/10 - ===> LOCAL-TRAINING Accuracy: 0.9620
+Epoch 4/10 - ===> LOCAL-TRAINING Accuracy: 0.9891
+Epoch 5/10 - ===> LOCAL-TRAINING Accuracy: 0.9864
+Epoch 6/10 - ===> LOCAL-TRAINING Accuracy: 0.9755
+Epoch 7/10 - ===> LOCAL-TRAINING Accuracy: 0.9973
+Epoch 8/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 9/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 10/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 11]
+[92mINFO [0m:      Receiving: evaluate message (ID: caf3d4e9a1b215a36f528ae434f3aa0733c079b4e4bba2f2e15a42770115b83b)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 11]
+[92mINFO [0m:      Sending: evaluate message (ID: 3e3516aad21b803ef4e9f50dfaa66d30c45f93188d8c5d8d5a3e229a69037d1e)
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+===> LOCAL-EVALUATE Accuracy: 0.7500
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 12]
+[92mINFO [0m:      Receiving: train message (ID: 1f9022a330219c3330c300ac012d27cbce0e7c2db125241f6a3498eb2ac6a5b7)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 12]
+[92mINFO [0m:      Sending: train message (ID: 6e2b393e078f5875e9ab2b6fd6912a3a615fb8861dc073c4d5a71476b96eea31)
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+🏃 ===> Training started on 368 local samples.
+Epoch 1/10 - ===> LOCAL-TRAINING Accuracy: 0.9158
+Epoch 2/10 - ===> LOCAL-TRAINING Accuracy: 0.9348
+Epoch 3/10 - ===> LOCAL-TRAINING Accuracy: 0.9755
+Epoch 4/10 - ===> LOCAL-TRAINING Accuracy: 0.9891
+Epoch 5/10 - ===> LOCAL-TRAINING Accuracy: 0.9946
+Epoch 6/10 - ===> LOCAL-TRAINING Accuracy: 0.9891
+Epoch 7/10 - ===> LOCAL-TRAINING Accuracy: 0.9946
+Epoch 8/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 9/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 10/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 12]
+[92mINFO [0m:      Receiving: evaluate message (ID: 84490a0ce3199865420fceefdaa07fe6a8c59ef4a4ca5689ff26e5fdcc883361)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 12]
+[92mINFO [0m:      Sending: evaluate message (ID: f64a4a3bd61eddc294439de3f0ea07de7a6baa0a34bace931b87b9132b9021e5)
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+===> LOCAL-EVALUATE Accuracy: 0.7174
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 13]
+[92mINFO [0m:      Receiving: train message (ID: 8819d9a09e93835736e6f502e8f1dd7d4fe9887956b2239ceb6829c6b303dd18)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 13]
+[92mINFO [0m:      Sending: train message (ID: cbed17d01d4f4c8187aa50c4a0c997abbde4ab4170d604e22ef9bdcc7e612dd1)
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+🏃 ===> Training started on 368 local samples.
+Epoch 1/10 - ===> LOCAL-TRAINING Accuracy: 0.9212
+Epoch 2/10 - ===> LOCAL-TRAINING Accuracy: 0.9457
+Epoch 3/10 - ===> LOCAL-TRAINING Accuracy: 0.9701
+Epoch 4/10 - ===> LOCAL-TRAINING Accuracy: 0.9918
+Epoch 5/10 - ===> LOCAL-TRAINING Accuracy: 0.9918
+Epoch 6/10 - ===> LOCAL-TRAINING Accuracy: 0.9973
+Epoch 7/10 - ===> LOCAL-TRAINING Accuracy: 0.9973
+Epoch 8/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 9/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 10/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 13]
+[92mINFO [0m:      Receiving: evaluate message (ID: 60ee16ea14e603d5383ad6842ee91bf55cc9d066387e38c4887ffcd24e70cf70)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 13]
+[92mINFO [0m:      Sending: evaluate message (ID: 650d6769deeace9491ada1bf998dab7d7fbfd346b182e56717b6b79ca36d89ee)
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+===> LOCAL-EVALUATE Accuracy: 0.7826
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 14]
+[92mINFO [0m:      Receiving: train message (ID: e05fcb08ad7256200afdf8c8e7d924d363c2c0120625ecb2a7d82d34df83b638)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 14]
+[92mINFO [0m:      Sending: train message (ID: 85357345dc525ac9c77be91810b3974334e64b725214f242daa87fb7ef7089a8)
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+🏃 ===> Training started on 368 local samples.
+Epoch 1/10 - ===> LOCAL-TRAINING Accuracy: 0.9457
+Epoch 2/10 - ===> LOCAL-TRAINING Accuracy: 0.9511
+Epoch 3/10 - ===> LOCAL-TRAINING Accuracy: 0.9837
+Epoch 4/10 - ===> LOCAL-TRAINING Accuracy: 0.9973
+Epoch 5/10 - ===> LOCAL-TRAINING Accuracy: 0.9973
+Epoch 6/10 - ===> LOCAL-TRAINING Accuracy: 0.9973
+Epoch 7/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 8/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 9/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 10/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 14]
+[92mINFO [0m:      Receiving: evaluate message (ID: 4373dac65eb27f9f923ac38793d77fa5ce34f309c18a0d29fb87633ba1ffd48e)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 14]
+[92mINFO [0m:      Sending: evaluate message (ID: 66908e26231c5223bf2a7fe788d10026b6148c86f68372775f6dac9e81e3326c)
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+===> LOCAL-EVALUATE Accuracy: 0.7826
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 15]
+[92mINFO [0m:      Receiving: train message (ID: 39a2e4941690f1392bd8a62bbafa179d7e96ca07d28cf0a2ba0ad698900e0f36)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 15]
+[92mINFO [0m:      Sending: train message (ID: d3e889bc6d58faf527a72b1795f6c4ab2a1227221a301bc807aef2dd61e0c94e)
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+🏃 ===> Training started on 368 local samples.
+Epoch 1/10 - ===> LOCAL-TRAINING Accuracy: 0.9158
+Epoch 2/10 - ===> LOCAL-TRAINING Accuracy: 0.9701
+Epoch 3/10 - ===> LOCAL-TRAINING Accuracy: 0.9946
+Epoch 4/10 - ===> LOCAL-TRAINING Accuracy: 0.9973
+Epoch 5/10 - ===> LOCAL-TRAINING Accuracy: 0.9973
+Epoch 6/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 7/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 8/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 9/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 10/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 15]
+[92mINFO [0m:      Receiving: evaluate message (ID: a2b5b052acf6e022a8da2884e6c57a388ff2515585079d90e459f6461858ea80)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 15]
+[92mINFO [0m:      Sending: evaluate message (ID: 3768fd2289f0aa440e52d557ecdb23404319825dc1c838b0c94fd8bc905d18d2)
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+===> LOCAL-EVALUATE Accuracy: 0.8478
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 16]
+[92mINFO [0m:      Receiving: train message (ID: ece9c24fd34611ceeedad93343676bf255540cbc5445b577547cba37565edad3)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 16]
+[92mINFO [0m:      Sending: train message (ID: a3a8dd58e5dd995279ebaa6e7d5dec7600879ee1be038942c50c9d59d4e7de2b)
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+🏃 ===> Training started on 368 local samples.
+Epoch 1/10 - ===> LOCAL-TRAINING Accuracy: 0.9565
+Epoch 2/10 - ===> LOCAL-TRAINING Accuracy: 0.9728
+Epoch 3/10 - ===> LOCAL-TRAINING Accuracy: 0.9973
+Epoch 4/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 5/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 6/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 7/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 8/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 9/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 10/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 16]
+[92mINFO [0m:      Receiving: evaluate message (ID: 1af88eb9383f129689b4c18964f5ea1b47b445de39e7b2c02496c587af2fcc5b)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 16]
+[92mINFO [0m:      Sending: evaluate message (ID: 56e63e61a7ad52aaa189c7ab62772a85d99bde1f4a579c9d3db205f1d88bbbb2)
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+===> LOCAL-EVALUATE Accuracy: 0.9022
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 17]
+[92mINFO [0m:      Receiving: train message (ID: c559ad7ad2934387425d1320720f359b565fac7a1a725effd9dcae9d7347c184)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 17]
+[92mINFO [0m:      Sending: train message (ID: 19de49daeaf689d663538cb3786d80766962e84ede87e3fdc74b229d6c4bb7a8)
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+🏃 ===> Training started on 368 local samples.
+Epoch 1/10 - ===> LOCAL-TRAINING Accuracy: 0.9592
+Epoch 2/10 - ===> LOCAL-TRAINING Accuracy: 0.9755
+Epoch 3/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 4/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 5/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 6/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 7/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 8/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 9/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 10/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 17]
+[92mINFO [0m:      Receiving: evaluate message (ID: 6ea27ff835d3dcd54111b65e59c8816f5f49520990323f9925caffd90b155ba6)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 17]
+[92mINFO [0m:      Sending: evaluate message (ID: a7f62f3d2d8ed904451006cac2f7e628838fe088c609985939a8d5927e190793)
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+===> LOCAL-EVALUATE Accuracy: 0.8261
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 18]
+[92mINFO [0m:      Receiving: train message (ID: 0513b5eaa2aec8646b7f2ed301c7c7e842079467f58da6413599efd548055b21)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 18]
+[92mINFO [0m:      Sending: train message (ID: e109691786c804888312f8712708c31a1ce16a98985d3fb5beb95e248cfd19e8)
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+🏃 ===> Training started on 368 local samples.
+Epoch 1/10 - ===> LOCAL-TRAINING Accuracy: 0.9728
+Epoch 2/10 - ===> LOCAL-TRAINING Accuracy: 0.9810
+Epoch 3/10 - ===> LOCAL-TRAINING Accuracy: 0.9946
+Epoch 4/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 5/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 6/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 7/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 8/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 9/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 10/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 18]
+[92mINFO [0m:      Receiving: evaluate message (ID: 03b8aed903407ec46897332024548c68b0aa63823263cc32dcf43b273da58b45)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 18]
+[92mINFO [0m:      Sending: evaluate message (ID: cbd0a3897462adacd565c80f1ee854cb771d215a94a00e74e96e43b1a163aaf7)
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+===> LOCAL-EVALUATE Accuracy: 0.9239
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 19]
+[92mINFO [0m:      Receiving: train message (ID: 53f322ed1c9195fbe76c6e4248acb9bc6b605ab0d5643e4d6df317f1b6554345)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 19]
+[92mINFO [0m:      Sending: train message (ID: 5c2fb0171237c93cdc6241b3d4ba3881a0d6c7935953b195f4cd85a1e59be093)
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+🏃 ===> Training started on 368 local samples.
+Epoch 1/10 - ===> LOCAL-TRAINING Accuracy: 0.9755
+Epoch 2/10 - ===> LOCAL-TRAINING Accuracy: 0.9810
+Epoch 3/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 4/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 5/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 6/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 7/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 8/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 9/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 10/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 19]
+[92mINFO [0m:      Receiving: evaluate message (ID: c5ca854ada0412eea0adc7ea79a7504cb6cbad36a114756f7e233dee83dd185a)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 19]
+[92mINFO [0m:      Sending: evaluate message (ID: 9d77937af4a7624a8dc26fab3720e6ce5ad03fb34a6747365db42e3a580a4185)
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+===> LOCAL-EVALUATE Accuracy: 0.8696
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 20]
+[92mINFO [0m:      Receiving: train message (ID: 2a1eced2d11eef874ed8afe1d7aed1c99dd75278e364e6a818ee6b1d0c77ff3d)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 20]
+[92mINFO [0m:      Sending: train message (ID: a97d121cf8c4891870ef1ec72df27d28bd90fc87cf93d8e1fbac327f82a3be0d)
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+🏃 ===> Training started on 368 local samples.
+Epoch 1/10 - ===> LOCAL-TRAINING Accuracy: 0.9837
+Epoch 2/10 - ===> LOCAL-TRAINING Accuracy: 0.9918
+Epoch 3/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 4/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 5/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 6/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 7/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 8/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 9/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+Epoch 10/10 - ===> LOCAL-TRAINING Accuracy: 1.0000
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 20]
+[92mINFO [0m:      Receiving: evaluate message (ID: 0fb7caf69f6de36dc0b76d8c2af0dc6782261006ef361c46c4d1091e361b477c)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 15949454708910894397, ROUND 20]
+[92mINFO [0m:      Sending: evaluate message (ID: 64d190c345824977691ce7b9edac62dedf97f9c2b9aa49667bb2adf3adc492c8)
+[92mINFO [0m:      Sent successfully
+📂 [DISK] Loading local dataset: ./data/client_08.pt...
+📦 [DATA LOADED] Training samples= 368, Validation samples= 92.
+✅ [RAM] Ready in 0.00 seconds.
+===> LOCAL-EVALUATE Accuracy: 0.9783
+[92mINFO [0m:      SuperNode terminated gracefully.
+[93mWARNING [0m:   Connection attempt failed, retrying in 0.22 seconds
+[93mWARNING [0m:   Connection attempt failed, retrying in 1.42 seconds
+[92mINFO [0m:      SuperExec terminated gracefully.

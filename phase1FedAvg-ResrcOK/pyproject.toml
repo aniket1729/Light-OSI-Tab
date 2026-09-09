@@ -1,0 +1,28 @@
+[project]
+name = "my-fl-app"
+version = "1.0.0"
+description = "PhD Federated Learning Project - Tabular One-Shot FL"
+license = "Apache-2.0"
+dependencies = ["flwr","torch", "torchvision", "pandas", "scikit-learn", "matplotlib", "seaborn"]
+
+[tool.flwr.app]
+publisher = "aniket"
+
+[tool.flwr.app.components]
+serverapp = "server_app:app"
+clientapp = "client_app:app"
+
+[tool.flwr.app.config]
+num-clients = 10
+
+[tool.flwr.federation]
+enabled = true
+number_of_nodes = 3  # This tells Flower to simulate 3 clients
+
+[tool.flwr.nodes]
+# This ensures each node gets a unique partition ID (0, 1, 2)
+partition-id = { enumeration = { size = 3 } }
+num-partitions = 3
+
+[tool.setuptools]
+py-modules = ["client_app", "server_app", "task", "prepare_tabular_data", "model_predict"]
